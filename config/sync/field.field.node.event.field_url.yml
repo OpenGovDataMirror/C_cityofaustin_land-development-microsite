@@ -1,0 +1,31 @@
+uuid: d114bcf0-7c9d-465d-9b8e-949255d60d61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.event
+  module:
+    - link
+id: node.event.field_url
+field_name: field_url
+entity_type: node
+bundle: event
+label: URL
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes:
+      class: btn
+    uri: 'internal:#'
+    options:
+      attributes:
+        class: 'btn btn-primary'
+    title: 'Read More'
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,37 @@
+uuid: 010850cb-6bef-481d-97b4-536c08feb57b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ms_image_resource.field_ms_resource_image
+    - field.field.paragraph.ms_image_resource.field_ms_resource_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ms_image_resource
+  module:
+    - image
+    - link
+id: paragraph.ms_image_resource.default
+targetEntityType: paragraph
+bundle: ms_image_resource
+mode: default
+content:
+  field_ms_resource_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ms_resource_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

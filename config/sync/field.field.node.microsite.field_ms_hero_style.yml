@@ -1,0 +1,21 @@
+uuid: b33be7d3-d5aa-46f0-a2bf-ebd33e49e4e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_hero_style
+    - node.type.microsite
+  module:
+    - options
+id: node.microsite.field_ms_hero_style
+field_name: field_ms_hero_style
+entity_type: node
+bundle: microsite
+label: 'Display Style'
+description: 'If Full is selected, the hero image will be 100% in the background, with text overlaying. If Split is selected, the hero image will display to the left at 50% width, with hero text to the right. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

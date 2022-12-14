@@ -1,0 +1,51 @@
+uuid: 93cc63f3-c9e1-4d16-8f9e-ea4f337e2fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.supporting_media.field_image
+    - field.field.paragraph.supporting_media.field_second_image
+    - field.field.paragraph.supporting_media.field_video
+    - image.style.supporting_media_large
+    - paragraphs.paragraphs_type.supporting_media
+  module:
+    - image
+    - video
+id: paragraph.supporting_media.default
+targetEntityType: paragraph
+bundle: supporting_media
+mode: default
+content:
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: supporting_media
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_second_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: supporting_media_large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_video:
+    weight: 1
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      autoplay: true
+      controls: true
+      loop: false
+      muted: false
+      preload: none
+    third_party_settings: {  }
+    type: video_player_list
+    region: content
+hidden: {  }

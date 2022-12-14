@@ -1,0 +1,55 @@
+uuid: 54093172-b95f-4bcd-a008-a42068310fef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.grid_page.body
+    - field.field.node.grid_page.field_grid_items
+    - field.field.node.grid_page.field_hero_image
+    - field.field.node.grid_page.field_meta_tags
+    - node.type.grid_page
+  module:
+    - entity_reference_revisions
+    - metatag
+    - text
+    - user
+id: node.grid_page.default
+targetEntityType: node
+bundle: grid_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_grid_items:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_hero_image: true

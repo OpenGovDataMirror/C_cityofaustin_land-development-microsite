@@ -1,0 +1,9 @@
+uuid: 0fea5ffa-af84-4f1d-9216-a2b0e44b5405
+langcode: en
+status: true
+dependencies: {  }
+id: stack
+label: Stack
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

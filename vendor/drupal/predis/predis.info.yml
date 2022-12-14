@@ -1,0 +1,5 @@
+name: Predis module
+type: module
+description: 'A wrapper for Predis library see more about this library in https://github.com/nrk/predis'
+core: 8.x
+package: Database

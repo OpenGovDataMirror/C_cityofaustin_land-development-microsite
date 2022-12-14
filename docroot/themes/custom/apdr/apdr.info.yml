@@ -1,0 +1,28 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: EMS
+description: 'EMS Recruiting theme based on Bootstrap sass subtheme'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  above_header: 'Above header'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  below_footer: 'Below Footer'
+  below_content: 'Below Content 100%'
+  below_content_contained: 'Below Content Contained'
+
+libraries-extend:
+  bootstrap/framework:
+    - apdr/framework

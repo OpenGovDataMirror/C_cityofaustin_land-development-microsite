@@ -1,0 +1,19 @@
+uuid: 2d92e957-572e-49b5-b8d5-422819b95494
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_left
+    - paragraphs.paragraphs_type.intro
+id: paragraph.intro.field_title_left
+field_name: field_title_left
+entity_type: paragraph
+bundle: intro
+label: 'Title Left'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

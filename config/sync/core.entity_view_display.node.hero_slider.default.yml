@@ -1,0 +1,33 @@
+uuid: 97cd3299-2516-48f9-bbc4-dcd4f62fdba3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_slider.field_slide
+    - field.field.node.hero_slider.field_slider
+    - node.type.hero_slider
+  module:
+    - entity_reference_revisions
+    - user
+id: node.hero_slider.default
+targetEntityType: node
+bundle: hero_slider
+mode: default
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slide:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_slider: true
+  links: true

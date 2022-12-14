@@ -1,0 +1,48 @@
+uuid: 16ff7f5d-1844-4cda-a491-6f40433232ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.career_block
+    - field.field.block_content.career_block.body
+    - field.field.block_content.career_block.field_image
+    - field.field.block_content.career_block.field_link
+    - image.style.grid_item
+  module:
+    - image
+    - link
+    - text
+id: block_content.career_block.default
+targetEntityType: block_content
+bundle: career_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: grid_item
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

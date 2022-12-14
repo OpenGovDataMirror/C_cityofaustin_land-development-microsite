@@ -1,0 +1,31 @@
+uuid: 17293b71-2cca-4abb-96bb-99958daab237
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_block:4156efac-04af-4ebe-a9ef-a3e8afd0c6cb'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: eventslistingheroimage
+theme: apdr
+region: header
+weight: -14
+provider: null
+plugin: 'block_content:4156efac-04af-4ebe-a9ef-a3e8afd0c6cb'
+settings:
+  id: 'block_content:4156efac-04af-4ebe-a9ef-a3e8afd0c6cb'
+  label: 'Events Listing Hero Image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /events
+    negate: false
+    context_mapping: {  }

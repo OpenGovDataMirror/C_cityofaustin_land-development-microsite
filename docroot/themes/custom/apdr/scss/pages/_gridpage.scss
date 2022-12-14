@@ -1,0 +1,167 @@
+.page-node-type-grid-page {
+  @include xs {
+    .field--name-field-grid-items .field--item .paragraph--type--grid-item div {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  @include sm-min {
+    .field--name-field-grid-items {
+      margin-top: 40px;
+    }
+
+    .field--name-field-grid-items .field--item:nth-child(2n) .paragraph--type--grid-item {
+      .field--name-field-body {
+        text-align: left;
+      }
+      ul {
+        direction: ltr;
+      }
+      > div:first-child {
+        left: 50%;
+        text-align: left;
+        p {
+          text-align: left;
+        }
+      }
+      > div:last-child {
+        right: 50%;
+      }
+    }
+  }
+
+  .media-col {
+	  @include box-sizing(border-box);
+
+	  @include xs {
+		  padding-top: 15px;
+		  padding-bottom: 15px;
+	  }
+
+	  @include sm-min {
+		  padding: 15px;
+	  }
+	  @include md-min {
+		  padding: 25px;
+	  }
+    position: relative;
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      transition: all 0.2s ease-in-out;
+      color: #fff;
+    }
+
+		&:hover {
+	    h3 {
+	      display: block;
+	    }
+		}
+  }
+
+  .text-col {
+	  @include box-sizing(border-box);
+
+	  @include xs {
+		  padding-top: 15px;
+		  padding-bottom: 15px;
+	  }
+	  @include sm-min {
+		  padding: 15px;
+		  padding-left: 15px !important;
+		  padding-right: 15px !important;
+		}
+
+	  @include md-min {
+		  padding: 25px;
+		  padding-left: 25px !important;
+		  padding-right: 25px !important;
+	  }
+
+	  h2 {
+		  font-family: oswald, serif;
+		  font-size: 30px;
+		  font-weight: 400;
+		  text-transform: uppercase;
+		  margin-bottom: 25px;
+
+		  @include md-min {
+			  font-size: 40px;
+		  }
+	  }
+
+	  .field--name-field-body {
+		  p {
+			  line-height: 24px;
+		  }
+	  }
+
+	  .collapse {
+		  padding-top: 15px;
+	  }
+
+	  .btn {
+		  margin-top: 15px;
+	  }
+  }
+
+  .view-academy-quick-links {
+    .item-list > ul {
+	    display: none;
+	    @include sm-min {
+		    display: block;
+	    }
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+	      float: left;
+	      width: 20%;
+
+	      h3 {
+		      position: absolute;
+		      bottom: 30px;
+		      left: 15px;
+		      color: #fff;
+		      font-size: 16px;
+		      margin: 0;
+		      padding: 0;
+		      text-transform: uppercase;
+		      text-shadow: 0px 0px 5px black;
+	      }
+
+				a {
+					@include box-sizing(border-box);
+					display: block;
+					border-bottom: 15px solid #eee;
+					transition: all 0.4s ease-in-out;
+
+					img {
+						width: 100%;
+						height: auto;
+					}
+
+					&:hover {
+						border-bottom: 15px solid $brand-primary;
+						text-decoration: none;
+					}
+				}
+      }
+    }
+  }
+
+  article > .content > .field--name-body {
+	  padding: 30px 0;
+	  p, li {
+		  font-size: 16px;
+		  line-height: 24px;
+	  }
+  }
+}

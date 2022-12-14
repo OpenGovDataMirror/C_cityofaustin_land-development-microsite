@@ -1,0 +1,6 @@
+services:
+  predis.connnection:
+    class: Drupal\predis\Database\Predis
+    calls: 
+      - [getConnection]
+    arguments: ['@config.factory']

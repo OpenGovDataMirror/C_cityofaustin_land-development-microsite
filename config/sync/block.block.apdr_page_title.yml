@@ -1,0 +1,27 @@
+uuid: 8bd01443-95af-4b08-b99e-a9c0333ac492
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apdr
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: apdr_page_title
+theme: apdr
+region: content
+weight: -18
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: 8fc2b383-db13-4bd3-b54c-b8214583c28d
+langcode: en
+status: true
+dependencies: {  }
+name: Positions
+vid: positions
+description: 'Officer positions.'
+hierarchy: 0
+weight: 0

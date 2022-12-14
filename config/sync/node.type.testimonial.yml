@@ -1,0 +1,17 @@
+uuid: d25ed3be-3b09-41f4-91f4-f1fb693059a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Testimonial
+type: testimonial
+description: 'Use <em>testimonial</em> pages for your testimonial content.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

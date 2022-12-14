@@ -1,0 +1,111 @@
+.view-event-sliders {
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	@include md-min {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+	.carousel-inner {
+		@include xs {
+			height: 700px;
+		}
+	}
+	
+	.carousel-caption {
+		color: #000;
+		text-shadow: none;
+		text-align: left;
+	}
+	
+	h3 {
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 0;
+		
+		@include md-min {
+			font-size: 30px;
+			line-height: 34px;			
+		}
+	}
+
+	.date {
+		font-size: 12px;
+		line-height: 14px;
+		
+		@include md-min {
+			font-size: 20px;
+			line-height: 23px;			
+		}
+	}
+	
+	img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.event-body {
+		@include xs {
+			padding-top: 20px;			
+		}
+
+		font-size: 12px;
+		line-height: 24px;
+		
+		@include md-min {
+			font-size: 16px;		
+		}
+
+		font-weight: normal;
+	}
+	
+	.carousel-indicators {
+		bottom: -10px;
+		@media (min-width: $screen-md-min) {
+			bottom: -10px;
+		}
+		li {
+			background-color: $gray-light;
+		}
+		li.active {
+			background-color: $brand-primary;
+		}
+	}
+	.carousel-control {
+		background-image: none;
+		opacity: 1;
+		background-color: $brand-primary;
+		height: 40px;
+		width: 40px;
+		top: auto;
+		border-radius: 5px;
+		.glyphicon {
+			font-size: 20px;
+		}
+		.glyphicon-chevron-right {
+			@include sm-min {
+				margin-right: -15px;	
+			}
+		}
+		.glyphicon-chevron-left {
+			@include sm-min {
+				margin-left: -15px;
+			}
+		}
+	}
+	.left.carousel-control {
+		left: 0;
+		
+		@include sm-min {
+			left: 40%;			
+		}
+
+	}
+	.right.carousel-control {
+		right: 0;	
+		@include sm-min {
+			right: 40%;			
+		}
+	}
+}

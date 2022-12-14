@@ -1,0 +1,33 @@
+uuid: 766db73c-e88a-4498-a8bd-6c6a257b82f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_image
+  module:
+    - ctools
+    - views
+  theme:
+    - apdr
+id: views_block__hero_image_block_2
+theme: apdr
+region: header
+weight: -17
+provider: null
+plugin: 'views_block:hero_image-block_2'
+settings:
+  id: 'views_block:hero_image-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      microsite: microsite
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

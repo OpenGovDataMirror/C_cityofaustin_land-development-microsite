@@ -1,0 +1,56 @@
+uuid: 22bc4332-adac-4978-b855-051cdc4b97cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.supporting_media.field_image
+    - field.field.paragraph.supporting_media.field_second_image
+    - field.field.paragraph.supporting_media.field_video
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.supporting_media
+  module:
+    - content_moderation
+    - image
+    - video
+id: paragraph.supporting_media.default
+targetEntityType: paragraph
+bundle: supporting_media
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_second_image:
+    weight: 101
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_video:
+    weight: 1
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+      file_extensions: 'mp4 ogv webm'
+      max_filesize: ''
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: video_upload
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

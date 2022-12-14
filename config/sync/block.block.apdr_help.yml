@@ -1,0 +1,22 @@
+uuid: fc965a76-97bd-4e75-88ce-0f9d142dad18
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - apdr
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: apdr_help
+theme: apdr
+region: content
+weight: -15
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

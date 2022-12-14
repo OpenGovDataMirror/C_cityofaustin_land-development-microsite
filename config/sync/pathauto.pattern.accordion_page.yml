@@ -1,0 +1,22 @@
+uuid: 658164fe-642d-4213-8df9-fdb76b2505e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: accordion_page
+label: 'Accordion Page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  6327eb6f-1513-4d52-919e-9f30cdbabf63:
+    id: node_type
+    bundles:
+      accordion_page: accordion_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6327eb6f-1513-4d52-919e-9f30cdbabf63
+selection_logic: and
+weight: -5
+relationships: {  }

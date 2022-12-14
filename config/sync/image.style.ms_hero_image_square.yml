@@ -1,0 +1,15 @@
+uuid: ad289e60-8b6f-4cd3-9dc1-b537ac29dc2e
+langcode: en
+status: true
+dependencies: {  }
+name: ms_hero_image_square
+label: 'Microsite Hero Image Square'
+effects:
+  5c33cbc2-d00f-4d29-9f86-f3ab64e15c8f:
+    uuid: 5c33cbc2-d00f-4d29-9f86-f3ab64e15c8f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      anchor: center-center

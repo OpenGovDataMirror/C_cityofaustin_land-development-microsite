@@ -1,0 +1,28 @@
+.page-node-type-officer {
+	.field--name-field-first-name {
+		float: left;
+		@include xs {
+			float: none;
+		}
+		margin-right: 15px;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	.field--name-field-last-name {
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	.field--name-field-email {
+		margin-bottom: 20px;
+	}
+	.field--name-field-image {
+		float: left;
+		margin-right: 20px;
+		@include circlebordered(320px, 10px, $brand-primary);
+		img {
+			@include circlebordered(300px, 10px, $gray-lighter);
+			-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.9));
+  			filter: drop-shadow(16px 10px 10px rgba(0,0,0,0.5));
+		}
+	}
+}

@@ -1,0 +1,60 @@
+uuid: b1c59677-f315-4a27-8e90-ed859d8d57f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.career_block
+    - field.field.block_content.career_block.body
+    - field.field.block_content.career_block.field_image
+    - field.field.block_content.career_block.field_link
+    - image.style.thumbnail
+  module:
+    - content_moderation
+    - image
+    - link
+    - text
+id: block_content.career_block.default
+targetEntityType: block_content
+bundle: career_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 4
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden: {  }

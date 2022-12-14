@@ -1,0 +1,31 @@
+uuid: 91872d3a-1c45-4316-845e-4bfccdcd1d0d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:69cf2db0-b362-4907-abe7-ebad76e80be7'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: militaryapd
+theme: apdr
+region: below_content_contained
+weight: -14
+provider: null
+plugin: 'block_content:69cf2db0-b362-4907-abe7-ebad76e80be7'
+settings:
+  id: 'block_content:69cf2db0-b362-4907-abe7-ebad76e80be7'
+  label: 'We Care for You'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /academy
+    negate: false
+    context_mapping: {  }

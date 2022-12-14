@@ -1,0 +1,7 @@
+name: APDR Import
+type: module
+description: 'Allows to import data from facebooks api and keep the data in sync.'
+package: Migrate
+core: 8.x
+dependencies:
+  - migrate_tools

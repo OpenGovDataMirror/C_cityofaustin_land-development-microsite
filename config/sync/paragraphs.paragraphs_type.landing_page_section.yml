@@ -1,0 +1,9 @@
+uuid: 9ea9bc2b-cef0-4839-93b2-578ad96ee592
+langcode: en
+status: true
+dependencies: {  }
+id: landing_page_section
+label: 'Landing page section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

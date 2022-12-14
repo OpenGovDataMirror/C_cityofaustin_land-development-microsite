@@ -1,0 +1,7 @@
+migrate_plus.migration.*.third_party.apdr_import:
+  type: mapping
+  label: 'API Schedular settings'
+  mapping:
+    interval:
+      type: integer
+      label: 'Run on every'

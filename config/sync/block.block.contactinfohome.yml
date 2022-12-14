@@ -1,0 +1,30 @@
+uuid: 93d08e79-be3b-4134-879e-df210e8fae8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - apdr
+id: contactinfohome
+theme: apdr
+region: below_content_contained
+weight: -13
+provider: null
+plugin: 'block_content:192717b9-b6ad-4160-b135-9534f375266c'
+settings:
+  id: 'block_content:192717b9-b6ad-4160-b135-9534f375266c'
+  label: 'Contact info'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      microsite: microsite
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

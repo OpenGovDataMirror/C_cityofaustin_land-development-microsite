@@ -1,0 +1,23 @@
+uuid: 36ad434b-e728-42ed-884f-53408594e671
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.stacked_layout
+  module:
+    - metatag
+id: node.stacked_layout.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: stacked_layout
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

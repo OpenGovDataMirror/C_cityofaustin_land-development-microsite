@@ -1,0 +1,19 @@
+uuid: bc03362a-670e-4d1a-ba70-b68f279291fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_right
+    - paragraphs.paragraphs_type.intro
+id: paragraph.intro.field_title_right
+field_name: field_title_right
+entity_type: paragraph
+bundle: intro
+label: 'Title Right'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

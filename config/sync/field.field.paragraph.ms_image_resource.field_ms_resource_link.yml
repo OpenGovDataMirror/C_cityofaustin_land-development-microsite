@@ -1,0 +1,23 @@
+uuid: e94639d5-22b7-409c-b54c-70b1eb0b913d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ms_resource_link
+    - paragraphs.paragraphs_type.ms_image_resource
+  module:
+    - link
+id: paragraph.ms_image_resource.field_ms_resource_link
+field_name: field_ms_resource_link
+entity_type: paragraph
+bundle: ms_image_resource
+label: Link
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

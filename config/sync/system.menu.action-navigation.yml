@@ -1,0 +1,8 @@
+uuid: a7305e64-0642-4d63-9f97-a78cf52dc5eb
+langcode: en
+status: true
+dependencies: {  }
+id: action-navigation
+label: 'Action Navigation'
+description: 'Menu with the common actions of the users.'
+locked: false

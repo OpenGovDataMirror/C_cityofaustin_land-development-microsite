@@ -1,0 +1,19 @@
+uuid: d08ad789-aeec-4b05-b107-0cf3e9afc35e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_video_subtext
+    - node.type.microsite
+id: node.microsite.field_ms_video_subtext
+field_name: field_ms_video_subtext
+entity_type: node
+bundle: microsite
+label: Subtext
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

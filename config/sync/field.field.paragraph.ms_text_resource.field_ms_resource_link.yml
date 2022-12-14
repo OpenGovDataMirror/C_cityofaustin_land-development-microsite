@@ -1,0 +1,23 @@
+uuid: 0c277893-1ef2-4e1b-b9f6-7c38f8ce485f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ms_resource_link
+    - paragraphs.paragraphs_type.ms_text_resource
+  module:
+    - link
+id: paragraph.ms_text_resource.field_ms_resource_link
+field_name: field_ms_resource_link
+entity_type: paragraph
+bundle: ms_text_resource
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

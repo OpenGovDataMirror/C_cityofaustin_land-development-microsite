@@ -1,0 +1,25 @@
+uuid: dbd7ecc4-5468-4c62-b5b6-9bc3ac339ed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_video_video_embed
+    - node.type.microsite
+  module:
+    - video_embed_field
+id: node.microsite.field_ms_video_video_embed
+field_name: field_ms_video_video_embed
+entity_type: node
+bundle: microsite
+label: 'Video Embed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

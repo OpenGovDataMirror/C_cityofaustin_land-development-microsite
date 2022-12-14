@@ -1,0 +1,15 @@
+uuid: 3959f7fa-fffd-41ba-9db3-faed3815230f
+langcode: en
+status: true
+dependencies: {  }
+name: video_slider
+label: 'Video Slider (1920x1080)'
+effects:
+  c2843500-21de-4cff-bc88-37e238d94ce8:
+    uuid: c2843500-21de-4cff-bc88-37e238d94ce8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 1080
+      anchor: center-center

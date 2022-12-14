@@ -1,0 +1,399 @@
+uuid: 30af2af1-b9dd-4d45-95bd-573587ba7618
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.microsite.field_ms_hero_image
+    - field.field.node.microsite.field_ms_hero_link
+    - field.field.node.microsite.field_ms_hero_style
+    - field.field.node.microsite.field_ms_hero_subtext
+    - field.field.node.microsite.field_ms_hero_title
+    - field.field.node.microsite.field_ms_links_display_style
+    - field.field.node.microsite.field_ms_links_links
+    - field.field.node.microsite.field_ms_links_title
+    - field.field.node.microsite.field_ms_resource
+    - field.field.node.microsite.field_ms_resource_title
+    - field.field.node.microsite.field_ms_video_background_image
+    - field.field.node.microsite.field_ms_video_display_style
+    - field.field.node.microsite.field_ms_video_embed_type
+    - field.field.node.microsite.field_ms_video_image_embed
+    - field.field.node.microsite.field_ms_video_map_embed
+    - field.field.node.microsite.field_ms_video_photo_credit
+    - field.field.node.microsite.field_ms_video_subtext
+    - field.field.node.microsite.field_ms_video_title
+    - field.field.node.microsite.field_ms_video_video_embed
+    - image.style.thumbnail
+    - node.type.microsite
+  module:
+    - conditional_fields
+    - content_moderation
+    - field_group
+    - iframe
+    - image
+    - link
+    - paragraphs
+    - path
+    - scheduler
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_hero:
+      children:
+        - field_ms_hero_style
+        - field_ms_hero_title
+        - field_ms_hero_subtext
+        - field_ms_hero_link
+        - field_ms_hero_image
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Hero
+      region: content
+    group_video_spotlight:
+      children:
+        - field_ms_video_display_style
+        - field_ms_video_embed_type
+        - field_ms_video_video_embed
+        - field_ms_video_image_embed
+        - field_ms_video_map_embed
+        - field_ms_video_title
+        - field_ms_video_subtext
+        - field_ms_video_background_image
+        - field_ms_video_photo_credit
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        label: Spotlight
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Spotlight
+      region: content
+    group_featured_resource:
+      children:
+        - field_ms_resource_title
+        - field_ms_resource
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        label: 'Featured Resources'
+        description: 'Only add the same kind of Resource. For example, if you start with Text Resource, use only the Text Resource type.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Featured Resources'
+      region: content
+    group_link_grid:
+      children:
+        - field_ms_links_display_style
+        - field_ms_links_title
+        - field_ms_links_links
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Link Grid'
+      region: content
+id: node.microsite.default
+targetEntityType: node
+bundle: microsite
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ms_hero_image:
+    weight: 20
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ms_hero_link:
+    weight: 19
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_ms_hero_style:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ms_hero_subtext:
+    weight: 18
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_ms_hero_title:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ms_links_display_style:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ms_links_links:
+    type: entity_reference_paragraphs
+    weight: 18
+    settings:
+      title: Link
+      title_plural: Links
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_ms_links_title:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ms_resource:
+    type: entity_reference_paragraphs
+    weight: 15
+    settings:
+      title: Resource
+      title_plural: Resources
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_ms_resource_title:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ms_video_background_image:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ms_video_display_style:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ms_video_embed_type:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ms_video_image_embed:
+    weight: 29
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      conditional_fields:
+        a5227002-e530-4dac-b85f-92519c6344c1:
+          dependee: field_ms_video_embed_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: image
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: microsite
+    type: image_image
+    region: content
+  field_ms_video_map_embed:
+    weight: 30
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: 0
+      scrolling: ''
+      transparency: 0
+      tokensupport: 0
+    third_party_settings:
+      conditional_fields:
+        4fb21eae-b04b-42a9-b81e-5fb40b908dbf:
+          dependee: field_ms_video_embed_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: map
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: microsite
+    type: iframe_urlwidthheight
+    region: content
+  field_ms_video_photo_credit:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ms_video_subtext:
+    weight: 32
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_ms_video_title:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ms_video_video_embed:
+    weight: 28
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        38968f21-0620-47b2-a20f-fd27b2bf913a:
+          dependee: field_ms_video_embed_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: video
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: microsite
+    type: video_embed_field_textfield
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 13
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

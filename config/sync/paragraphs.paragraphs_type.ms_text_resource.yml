@@ -1,0 +1,9 @@
+uuid: 82899797-8be0-48cb-a7bb-875e4ab9a787
+langcode: en
+status: true
+dependencies: {  }
+id: ms_text_resource
+label: 'Text Resource'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

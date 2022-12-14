@@ -1,0 +1,21 @@
+uuid: 6b5d252b-84ad-42c5-b715-5eac917df2f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_right_body
+    - paragraphs.paragraphs_type.intro
+  module:
+    - text
+id: paragraph.intro.field_right_body
+field_name: field_right_body
+entity_type: paragraph
+bundle: intro
+label: 'Right Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

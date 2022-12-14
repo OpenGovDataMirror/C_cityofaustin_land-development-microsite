@@ -1,0 +1,36 @@
+uuid: 937db93f-07ae-4d57-98f5-fb3ba1dfd3b6
+langcode: en
+status: false
+dependencies:
+  module:
+    - twitter_block
+  theme:
+    - apdr
+id: twitterblock
+theme: apdr
+region: footer
+weight: -16
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: 'Twitter block'
+  provider: twitter_block
+  label_display: '0'
+  username: joinapd
+  theme: ''
+  link_color: 005EB8
+  width: ''
+  height: ''
+  chrome:
+    noheader: '0'
+    nofooter: '0'
+    noborders: '0'
+    noscrollbar: '0'
+    transparent: '0'
+  border_color: 005EB8
+  language: ''
+  tweet_limit: '5'
+  related: ''
+  polite: polite
+visibility: {  }

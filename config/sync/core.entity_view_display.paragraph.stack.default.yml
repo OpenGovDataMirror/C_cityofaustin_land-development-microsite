@@ -1,0 +1,52 @@
+uuid: 6d418c1e-4960-4ecf-acc3-0dfa4ae59ebc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stack.field_body
+    - field.field.paragraph.stack.field_images
+    - field.field.paragraph.stack.field_intro_title
+    - field.field.paragraph.stack.field_title
+    - image.style.large
+    - paragraphs.paragraphs_type.stack
+  module:
+    - image
+    - text
+id: paragraph.stack.default
+targetEntityType: paragraph
+bundle: stack
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_images:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_intro_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

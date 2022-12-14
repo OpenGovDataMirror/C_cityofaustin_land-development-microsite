@@ -1,0 +1,32 @@
+schemas:
+  bootstrap: 8000
+  apdr: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://apdr.dev.zilleem.com/themes/custom/apdr/favicon.ico'
+  use_default: true
+navbar_position: fixed-top
+table_responsive: '-1'
+table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+cdn_provider: ''
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+  below_footer: ''

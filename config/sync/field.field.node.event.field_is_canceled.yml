@@ -1,0 +1,23 @@
+uuid: e5f62a73-7c3b-428b-8861-b26282c6fcbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_canceled
+    - node.type.event
+id: node.event.field_is_canceled
+field_name: field_is_canceled
+entity_type: node
+bundle: event
+label: 'Is Canceled'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

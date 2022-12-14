@@ -1,0 +1,31 @@
+uuid: 6f614688-8b4e-4130-972b-ee932060898c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:career_block:e4fc6d49-7b8a-4edc-ade9-6b6acc3400ea'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: careeradvancement
+theme: apdr
+region: below_content_contained
+weight: -17
+provider: null
+plugin: 'block_content:e4fc6d49-7b8a-4edc-ade9-6b6acc3400ea'
+settings:
+  id: 'block_content:e4fc6d49-7b8a-4edc-ade9-6b6acc3400ea'
+  label: 'Career Advancement'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

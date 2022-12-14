@@ -1,0 +1,15 @@
+uuid: 5c411086-bcfc-4088-a313-d84e044236c9
+langcode: en
+status: true
+dependencies: {  }
+name: supporting_media_large
+label: 'Supporting Media Large'
+effects:
+  4cf8fc80-1119-4e36-9a91-010e56fbd826:
+    uuid: 4cf8fc80-1119-4e36-9a91-010e56fbd826
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 740
+      height: 415
+      anchor: center-center

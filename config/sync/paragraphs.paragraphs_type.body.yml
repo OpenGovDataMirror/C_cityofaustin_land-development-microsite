@@ -1,0 +1,9 @@
+uuid: 12299b37-f54f-4267-b69b-bff0d8c86a09
+langcode: en
+status: true
+dependencies: {  }
+id: body
+label: Body
+icon_uuid: null
+description: 'Paragraph type used to display a body of a landing page'
+behavior_plugins: {  }

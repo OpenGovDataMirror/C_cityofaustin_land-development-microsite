@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * EMS custom overrides module.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ems_custom_form_webform_settings_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Why there isn't an option for this is a mystery.
+  $form['general_settings']['enabled'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Enabled'),
+    '#weight' => -1,
+  ];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ems_custom_form_webform_submission_contact_add_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($webform = \Drupal\webform\Entity\Webform::load('contact')) {
+  dsm($webform);
+  //$form['#access'] = FALSE;
+  }
+}

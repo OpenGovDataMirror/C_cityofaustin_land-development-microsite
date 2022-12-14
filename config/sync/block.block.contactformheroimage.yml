@@ -1,0 +1,31 @@
+uuid: b66c3563-6b0c-4bce-bb96-ceb73c402cd2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_block:a5b249f2-ad37-4d3a-9b04-67b80a704b8e'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: contactformheroimage
+theme: apdr
+region: header
+weight: -15
+provider: null
+plugin: 'block_content:a5b249f2-ad37-4d3a-9b04-67b80a704b8e'
+settings:
+  id: 'block_content:a5b249f2-ad37-4d3a-9b04-67b80a704b8e'
+  label: 'Contact Form Hero Image'
+  provider: core
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/contact\r\n/apply-later"
+    negate: false
+    context_mapping: {  }

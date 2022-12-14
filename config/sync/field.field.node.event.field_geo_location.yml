@@ -1,0 +1,38 @@
+uuid: 38bdfd55-58ff-427a-94f7-cd3886c17dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geo_location
+    - node.type.event
+  module:
+    - geocoder_field
+    - geolocation
+third_party_settings:
+  geocoder_field:
+    method: source
+    weight: 0
+    geocode_field: field_address
+    reverse_geocode_field: {  }
+    hidden: false
+    disabled: false
+    plugins:
+      - googlemaps
+    dumper: geolocation
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: node.event.field_geo_location
+field_name: field_geo_location
+entity_type: node
+bundle: event
+label: 'Geo Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

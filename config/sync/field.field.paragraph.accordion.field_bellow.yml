@@ -1,0 +1,37 @@
+uuid: ca580335-0462-4c28-b006-709ea27d214e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bellow
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.bellow
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_bellow
+field_name: field_bellow
+entity_type: paragraph
+bundle: accordion
+label: Bellow
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bellow: bellow
+    target_bundles_drag_drop:
+      accordion:
+        weight: 4
+        enabled: false
+      bellow:
+        enabled: true
+        weight: 5
+      slide_show:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

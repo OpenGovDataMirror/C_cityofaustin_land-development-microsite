@@ -1,0 +1,40 @@
+uuid: 512a2cd9-1933-4895-9ce6-c1db070ed691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide
+    - node.type.hero_slider
+    - paragraphs.paragraphs_type.slide_show
+  module:
+    - entity_reference_revisions
+id: node.hero_slider.field_slide
+field_name: field_slide
+entity_type: node
+bundle: hero_slider
+label: Slide
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slide_show: slide_show
+    target_bundles_drag_drop:
+      accordion:
+        weight: 5
+        enabled: false
+      bellow:
+        weight: 6
+        enabled: false
+      grid_item:
+        weight: 7
+        enabled: false
+      slide_show:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

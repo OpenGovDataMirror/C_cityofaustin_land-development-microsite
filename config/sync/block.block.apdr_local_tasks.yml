@@ -1,0 +1,22 @@
+uuid: c48b4e4b-9489-4f1f-936d-278f297858ef
+langcode: en
+status: true
+dependencies:
+  theme:
+    - apdr
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: apdr_local_tasks
+theme: apdr
+region: content
+weight: -17
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

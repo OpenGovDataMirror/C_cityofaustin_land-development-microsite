@@ -1,0 +1,9 @@
+uuid: e8aa2678-bef4-41d8-a52b-1bbba65949b7
+langcode: en
+status: true
+dependencies: {  }
+id: bellow
+label: Bellow
+icon_uuid: null
+description: 'Paragraph type used to display a bellow of an accordion'
+behavior_plugins: {  }

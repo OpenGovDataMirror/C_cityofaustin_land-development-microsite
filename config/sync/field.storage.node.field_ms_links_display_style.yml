@@ -1,0 +1,27 @@
+uuid: d434df79-1c26-46b7-b74b-b0ed85a3aeb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ms_links_display_style
+field_name: field_ms_links_display_style
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: padding
+      label: Spaced
+    -
+      value: no-padding
+      label: 'Not Spaced'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

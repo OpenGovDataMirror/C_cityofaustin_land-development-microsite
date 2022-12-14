@@ -1,0 +1,9 @@
+uuid: 3e4ed99a-49bf-4056-a20b-405abc82ad8b
+langcode: en
+status: true
+dependencies: {  }
+id: slide_show
+label: 'Slide show'
+icon_uuid: null
+description: 'House slide shows'
+behavior_plugins: {  }

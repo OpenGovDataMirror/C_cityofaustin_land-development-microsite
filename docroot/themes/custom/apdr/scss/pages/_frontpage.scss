@@ -1,0 +1,254 @@
+.path-frontpage {
+  .region-below-content-contained {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .field--name-field-image {
+      @include border-radius(10px);
+      overflow: hidden;
+    }
+  }
+  #block-careeradvancement2, #block-careeradvancement {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    h2 {
+      font-family: oswald, serif;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      
+      @include md-min {
+        font-size: 40px;
+      }
+    }
+    a {
+      margin-top: 20px;
+      @include sm-min {
+      	width: 150px;	      
+      }
+    }
+  }
+
+  @include sm-min {
+    .col-float-right {
+      float: right;
+    }
+    .col-float-left {
+      float: left;
+    }
+  }
+  .blue-wrap {
+    background-color: $brand-primary;
+    color: #fff;
+  }
+
+  #block-careerpath {
+    h2 {
+      text-align: center;
+      font-family: oswald, serif;
+      font-size: 40px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      
+      @include md-min {
+        font-size: 50px;
+      }
+    }
+  }
+
+  #block-slideshow {
+    height: 402px;
+    // make the front page slider contextual link accessible.
+    .contextual {
+      margin-top: 40px;
+    }
+    .video-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      /* Make video to at least 100% wide and tall */
+      min-width: 100%;
+      min-height: 100%;
+      display: block;
+
+      /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+      width: auto;
+      height: auto;
+
+      /* Center the video */
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @include sm-min {
+      height: 697px;
+    }
+
+    .arrow {
+      background-image: url('../images/carousel/hero-arrow.svg');
+      position: absolute;
+      width: 31px;
+      height: 21px;
+      bottom: 30px;
+      left: 50%;
+      z-index: 10;
+      background-position: center center;
+      background-repeat: no-repeat;
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+    .bounce:hover {
+      animation: none;
+    }
+    > .carousel {
+      margin-top: -95px;
+
+      @include sm-min {
+        margin-top: -110px;
+      }
+    }
+
+    .item {
+      background-position: center center;
+      background-size: cover;
+      height: 497px;
+
+      @include sm-min {
+        height: 807px;
+      }
+    }
+
+    .carousel-indicators {
+      display: none;
+    }
+
+    // Hides video player icon on iOS.
+    // https://stackoverflow.com/questions/8911247/hide-iphone-html5-video-play-button
+    /* This used to work for the parent element of button divs */
+    *::-webkit-media-controls-panel {
+      display: none!important;
+      -webkit-appearance: none;
+    }
+    *::-webkit-media-controls-play-button {
+      display: none!important;
+      -webkit-appearance: none;
+    }
+    *::-webkit-media-controls-start-playback-button {
+      display: none!important;
+      -webkit-appearance: none;
+    }
+  }
+  .view-event-sliders .carousel-caption {
+    top: 0;
+  }
+  .view-event-sliders {
+    margin-bottom: 50px;
+  }
+  .slider-controls-grouped {
+    position: relative;
+    height: 50px;
+  }
+  
+  .main-container.container {
+	  @include box-sizing(border-box);
+	  width: 100%;
+	  max-width: 1920px;
+  }
+  
+  // remove padding to go full width
+  #views-bootstrap-hero-sliders-block-1 {
+	  margin-right: -15px;
+	  margin-left: -15px;
+	  background-image: url('../images/video-cover.png');
+		background-size: cover;
+  }
+  
+  #block-whyaustin {
+	  height: 450px;
+	  
+	  @include md-min {
+			height: 750px;
+	  }
+	  
+	  background: transparent url('../images/austin2.jpg') center center no-repeat;
+	  background-attachment: fixed; 
+		background-size: cover;	
+		
+		@supports (-webkit-overflow-scrolling: touch) {
+	    background-attachment: scroll;
+	    background-size: auto 450px;	
+	    
+			@include md-min {
+				background-size: auto 750px;
+	  	}
+		}		
+		
+		.field--name-body {
+			@include box-sizing(border-box);
+		  display: flex;
+		  flex: 1 0 auto;
+		  position: relative;
+		  height: 450px;
+		  
+		  @include md-min {
+				height: 750px;
+		  }
+		  padding: 80px;
+		  justify-content: center;
+		  align-items: center;
+
+			p {
+			  letter-spacing: -4px;
+			  color: #fff;
+			  text-align: center;
+			  font-size: 40px;
+				line-height: 50px;
+
+			  @include sm-min {
+				  font-size: 80px;				  
+					line-height: 100px;
+					letter-spacing: -6px;
+			  }
+			  
+			  @include md-min {
+				  font-size: 160px;				  
+					line-height: 200px;
+					letter-spacing: -10px;
+			  }
+
+			  font-weight: 800;
+			  
+			  a {
+				  color: #fff;
+  				transition: all 0.5s ease-in-out;
+				  
+				  &:hover {
+					  text-decoration: none;
+					  color: $brand-gold;
+				  }
+			  }
+			}
+		}
+  }
+  
+  #top-bar {
+	  margin: 0;
+  }
+}

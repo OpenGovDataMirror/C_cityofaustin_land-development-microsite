@@ -1,0 +1,20 @@
+uuid: c9a63ff3-092a-4af1-a4e6-b1113d0d74e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_intro_two_column
+field_name: field_intro_two_column
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

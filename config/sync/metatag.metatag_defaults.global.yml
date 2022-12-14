@@ -1,0 +1,14 @@
+uuid: e39462fe-7148-4bee-93ad-59537fdc69dc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  geo_placename: '1520 Rutherford Lane, Bldg. 3, Austin, TX 78754, USA'
+  geo_position: '30.33787,-97.680983'
+  geo_region: US-TX
+  title: '[current-page:title] | [site:name]'

@@ -1,0 +1,58 @@
+uuid: cc6b20d1-26a0-404f-8eb2-f7cab8cb7e3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_paragraph
+    - paragraphs.paragraphs_type.body
+    - paragraphs.paragraphs_type.landing_page_section
+  module:
+    - entity_reference_revisions
+id: paragraph.landing_page_section.field_body_paragraph
+field_name: field_body_paragraph
+entity_type: paragraph
+bundle: landing_page_section
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      body: body
+    target_bundles_drag_drop:
+      accordion:
+        weight: 11
+        enabled: false
+      bellow:
+        weight: 12
+        enabled: false
+      body:
+        enabled: true
+        weight: 13
+      footer:
+        weight: 14
+        enabled: false
+      grid_item:
+        weight: 15
+        enabled: false
+      intro:
+        weight: 16
+        enabled: false
+      landing_page_section:
+        weight: 17
+        enabled: false
+      slide_show:
+        weight: 18
+        enabled: false
+      stack:
+        weight: 19
+        enabled: false
+      supporting_media:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

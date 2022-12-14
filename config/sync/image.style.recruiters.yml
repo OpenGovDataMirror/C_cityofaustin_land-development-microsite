@@ -1,0 +1,15 @@
+uuid: 4c9de6ba-90f3-4353-9244-d85462dd0ccb
+langcode: en
+status: true
+dependencies: {  }
+name: recruiters
+label: Recruiters
+effects:
+  d648f590-bca3-4e8e-beb6-5c2f63f71914:
+    uuid: d648f590-bca3-4e8e-beb6-5c2f63f71914
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 270
+      height: 253
+      anchor: center-center

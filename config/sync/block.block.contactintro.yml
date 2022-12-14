@@ -1,0 +1,31 @@
+uuid: b6fb682b-c93e-40a6-bea7-43d3af9af645
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2701c5da-1d21-44dc-b7cb-0e25a86389bc'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: contactintro
+theme: apdr
+region: content
+weight: -14
+provider: null
+plugin: 'block_content:2701c5da-1d21-44dc-b7cb-0e25a86389bc'
+settings:
+  id: 'block_content:2701c5da-1d21-44dc-b7cb-0e25a86389bc'
+  label: 'Contact Intro'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/apply-later\r\n/contact"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 502323dc-56aa-4cc3-8661-1482e36a236b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bbe38f52-b272-4e72-9fff-67bb25db516a'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: careerpath
+theme: apdr
+region: below_content_contained
+weight: -18
+provider: null
+plugin: 'block_content:bbe38f52-b272-4e72-9fff-67bb25db516a'
+settings:
+  id: 'block_content:bbe38f52-b272-4e72-9fff-67bb25db516a'
+  label: 'Career Path'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

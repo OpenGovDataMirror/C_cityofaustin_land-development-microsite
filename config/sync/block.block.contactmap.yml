@@ -1,0 +1,31 @@
+uuid: 2efcc293-141d-47a0-881d-e87cf4b220a7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ba923060-5693-4999-ba94-bc2ed2874293'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: contactmap
+theme: apdr
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:ba923060-5693-4999-ba94-bc2ed2874293'
+settings:
+  id: 'block_content:ba923060-5693-4999-ba94-bc2ed2874293'
+  label: 'Contact Map'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/apply-later\r\n/contact"
+    negate: false
+    context_mapping: {  }

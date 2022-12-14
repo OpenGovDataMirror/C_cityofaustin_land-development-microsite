@@ -1,0 +1,19 @@
+uuid: 57e77563-e785-4415-9521-df402b9dfd72
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_ms_hero_link
+field_name: field_ms_hero_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

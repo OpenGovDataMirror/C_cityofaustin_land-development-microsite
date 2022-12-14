@@ -1,0 +1,55 @@
+uuid: fe773e6e-f5a3-4cfe-a123-988172e72c52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stack
+    - node.type.stacked_layout
+    - paragraphs.paragraphs_type.stack
+  module:
+    - entity_reference_revisions
+id: node.stacked_layout.field_stack
+field_name: field_stack
+entity_type: node
+bundle: stacked_layout
+label: Stack
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      stack: stack
+    target_bundles_drag_drop:
+      accordion:
+        weight: 10
+        enabled: false
+      bellow:
+        weight: 11
+        enabled: false
+      body:
+        weight: 12
+        enabled: false
+      footer:
+        weight: 13
+        enabled: false
+      grid_item:
+        weight: 14
+        enabled: false
+      intro:
+        weight: 15
+        enabled: false
+      slide_show:
+        weight: 16
+        enabled: false
+      stack:
+        enabled: true
+        weight: 17
+      supporting_media:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

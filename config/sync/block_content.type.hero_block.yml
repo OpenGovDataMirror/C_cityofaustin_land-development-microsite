@@ -1,0 +1,8 @@
+uuid: f681b065-db42-4b2a-9e32-c197f956998a
+langcode: en
+status: true
+dependencies: {  }
+id: hero_block
+label: 'Hero Block'
+revision: 1
+description: 'Use this block to place a hero image on system pages.'

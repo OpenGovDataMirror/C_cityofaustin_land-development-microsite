@@ -1,0 +1,9 @@
+uuid: fc8bf308-02d2-4d11-97ba-0378560a5786
+langcode: en
+status: true
+dependencies: {  }
+id: ms_links_image_link
+label: 'Image Link'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

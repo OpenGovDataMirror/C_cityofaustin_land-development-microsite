@@ -1,0 +1,23 @@
+uuid: ad974fa4-1dd2-46ee-8ac7-b6d095f31dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_hero_link
+    - node.type.microsite
+  module:
+    - link
+id: node.microsite.field_ms_hero_link
+field_name: field_ms_hero_link
+entity_type: node
+bundle: microsite
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

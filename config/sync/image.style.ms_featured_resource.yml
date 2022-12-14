@@ -1,0 +1,15 @@
+uuid: 4d13ed39-854e-417e-b117-8f255488d441
+langcode: en
+status: true
+dependencies: {  }
+name: ms_featured_resource
+label: 'Microsite Featured Resource'
+effects:
+  f67daee9-0521-467c-a2c3-e7df0739ff60:
+    uuid: f67daee9-0521-467c-a2c3-e7df0739ff60
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

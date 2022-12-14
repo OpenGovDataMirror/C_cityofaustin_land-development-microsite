@@ -1,0 +1,126 @@
+uuid: 26b59a66-8cd4-4516-8d30-eb310556c9a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_address
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_facebook_event_id
+    - field.field.node.event.field_geo_location
+    - field.field.node.event.field_image
+    - field.field.node.event.field_is_canceled
+    - field.field.node.event.field_is_draft
+    - field.field.node.event.field_meta_tags
+    - field.field.node.event.field_slider
+    - field.field.node.event.field_url
+    - node.type.event
+  module:
+    - address
+    - datetime_range
+    - geolocation
+    - image
+    - link
+    - metatag
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_dates:
+    weight: 2
+    label: hidden
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_geo_location:
+    type: geolocation_map
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      set_marker: '1'
+      title: ''
+      info_text: ''
+      google_map_settings:
+        height: 400px
+        width: 100%
+        type: ROADMAP
+        zoom: '10'
+        maxZoom: 18
+        minZoom: 0
+        zoomControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        preferScrollingToZooming: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        mapTypeControl: 0
+        streetViewControl: 0
+        rotateControl: 0
+        fullscreenControl: 0
+        disableDoubleClickZoom: 0
+      use_overridden_map_settings: 0
+      common_map: ''
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_url:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: null
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_facebook_event_id: true
+  field_is_canceled: true
+  field_is_draft: true
+  field_slider: true

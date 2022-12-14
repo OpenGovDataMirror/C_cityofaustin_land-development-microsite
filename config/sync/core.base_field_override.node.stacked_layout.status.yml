@@ -1,0 +1,22 @@
+uuid: b2668b55-c391-47d7-b32f-2ea147a451ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.stacked_layout
+id: node.stacked_layout.status
+field_name: status
+entity_type: node
+bundle: stacked_layout
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

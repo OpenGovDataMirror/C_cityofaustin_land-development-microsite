@@ -1,0 +1,96 @@
+.below-content {
+	.block-views-blockrecruiting-team-block-1 {
+		.block-title {
+			@include md-min {
+				font-size: 50px;
+			}
+
+			background: $brand-gold;
+			color: $brand-primary;
+			font-size: 30px;
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 25px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.view-header {
+			h3 {
+				font-size: 34px;
+				@include md-min {
+					font-size: 28px;
+				}
+				text-align: center;
+				text-transform: uppercase;
+				color: $brand-primary;
+				padding: 50px 25px;
+				border-bottom: 50px solid $brand-gold;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+		}
+
+		.views-view-grid {
+			background: $brand-primary;
+			padding: 100px 0 35px 0;
+
+			.row {
+				@extend .container;
+
+				.col {
+					color: #c3c3c3;
+					font-size: 16px;
+					line-height: 19px;
+					margin-bottom: 65px;
+
+					.views-field-field-image {
+						@include border-radius(5px);
+						overflow: hidden;
+
+						img {
+							width: 100%;
+							height: auto;
+						}
+					}
+
+					h3, h4 {
+						font-size: 24px;
+						line-height: 29px;
+						font-size: bold;
+						margin: 0;
+						padding: 0;
+					}
+
+					h3 {
+						margin-top: 15px;
+					}
+
+					h4 {
+						margin-bottom: 20px;
+					}
+
+					.views-field-view-node {
+						padding-top: 20px;
+						a {
+							color: #c3c3c3;
+
+							&:hover {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.below-content-contained {
+	#block-womanontheteam, #block-militaryapd, #block-beyondthebadge {
+		img {
+			width: 100%;
+		}
+	}
+}

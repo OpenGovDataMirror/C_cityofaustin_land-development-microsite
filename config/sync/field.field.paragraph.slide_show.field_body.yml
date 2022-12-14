@@ -1,0 +1,21 @@
+uuid: 26d022fa-fac9-41ff-936a-2dc9d6213575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.slide_show
+  module:
+    - text
+id: paragraph.slide_show.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: slide_show
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

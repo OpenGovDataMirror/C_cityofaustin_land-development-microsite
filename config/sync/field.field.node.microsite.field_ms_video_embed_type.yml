@@ -1,0 +1,21 @@
+uuid: 2ec9dccc-54b5-4140-b3c7-ab952f62872f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_video_embed_type
+    - node.type.microsite
+  module:
+    - options
+id: node.microsite.field_ms_video_embed_type
+field_name: field_ms_video_embed_type
+entity_type: node
+bundle: microsite
+label: 'Embed Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

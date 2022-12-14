@@ -1,0 +1,23 @@
+uuid: 21e88936-7b66-4978-9aed-e92f07989876
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.grid_page
+  module:
+    - metatag
+id: node.grid_page.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: grid_page
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

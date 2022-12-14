@@ -1,0 +1,18 @@
+uuid: 50f38be0-55f9-4344-8520-b8078170152a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_facebook_event_id
+field_name: field_facebook_event_id
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 9b0a9756-5b4a-4862-8f9c-bb12868e934a
+langcode: en
+status: true
+dependencies: {  }
+id: grid_item
+label: 'Grid Item'
+icon_uuid: null
+description: 'Grid items used on the grid content type pages.'
+behavior_plugins: {  }

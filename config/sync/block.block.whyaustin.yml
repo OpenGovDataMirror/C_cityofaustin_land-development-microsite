@@ -1,0 +1,31 @@
+uuid: ccf805a4-83eb-41d2-b542-21ad47584339
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e986c515-99c4-4d5b-8dbf-96c614e6593b'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: whyaustin
+theme: apdr
+region: below_content
+weight: -19
+provider: null
+plugin: 'block_content:e986c515-99c4-4d5b-8dbf-96c614e6593b'
+settings:
+  id: 'block_content:e986c515-99c4-4d5b-8dbf-96c614e6593b'
+  label: 'Why Austin?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

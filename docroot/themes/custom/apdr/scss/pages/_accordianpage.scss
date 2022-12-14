@@ -1,0 +1,141 @@
+.page-node-type-accordion-page {
+	.field--name-body {
+		@include sm-min() {
+			padding-top: 30px;
+		}
+	}
+
+	.panel {
+		@include border-radius(0);
+		border: 0;
+
+		.panel-heading {
+			background: transparent;
+		}
+
+		.panel-title {
+			padding: 0;
+			margin: 0;
+
+			> a {
+				display: block;
+				padding: 15px 15px;
+				margin: -15px -15px;
+				transition: all 0.4s ease-in-out;
+				background: $brand-gold;
+				margin-bottom: 10px;
+				font-size: 14px;
+				&:after {
+					content: "\2b";
+					float: right;
+				}
+
+				&:hover {
+					text-decoration: none;
+					background: $brand-primary;
+					color: #fff;
+					color: $brand-gold;
+				}
+			}
+			> a[aria-expanded="true"] {
+				background: $brand-primary;
+				color: $brand-gold;
+				&:after {
+			    content: "\2212";
+			  }
+			}
+
+			> a[aria-expanded="false"]:after {
+			    content:  "\2b";
+			}
+		}
+
+		.panel-body {
+			border-top: 0 !important;
+			padding-top: 0 !important;
+			padding-bottom: 15px !important;
+
+			.views-field-field-title {
+				font-weight: bold;
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	@include sm-min {
+		#page-accordian {
+			&.horizontal-accordian {
+				padding: 15px;
+				border: 1px solid $gray-lighter;
+
+				margin: 15px 0;
+
+				.nav-tabs {
+					float: left;
+					width: 25%;
+					margin: 0;
+					display: block;
+					justify-content: none;
+					position: relative;
+					top: 0;
+					left: 1px;
+					z-index: 2;
+
+					> li {
+						display: block;
+						float: none;
+
+						> a {
+							@include border-radius(5px 0 0 5px);
+							display: block;
+							text-align: left;
+							margin: 0;
+						}
+
+						&.active {
+							a {
+								background: #f8f8f8;
+								color: $brand-primary;
+								border: 1px solid #f0f0f0;
+								border-right: 0;
+							}
+						}
+					}
+				}
+
+				.tab-content {
+					@include border-radius(0 5px 5px 5px);
+					float: left;
+					width: 75%;
+					background: #f8f8f8;
+					padding: 15px 10px;
+					border: 1px solid #f0f0f0;
+					z-index: 1;
+					position: relative;
+					top: 0;
+					left: 0;
+
+					.panel-group {
+						margin-bottom: 0;
+						border: 0;
+						.panel {
+							background-color: transparent;
+							border: 0;
+
+							.panel-title a {
+								background: $brand-primary;
+								color: #fff;
+
+								&:hover {
+									background: $gray;
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+}

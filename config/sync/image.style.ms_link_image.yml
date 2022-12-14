@@ -1,0 +1,15 @@
+uuid: e050e02e-440a-4256-b73c-739e5ad8be34
+langcode: en
+status: true
+dependencies: {  }
+name: ms_link_image
+label: 'Microsite Link Image'
+effects:
+  793f4d71-2d11-471f-83d7-a071a1c26ed0:
+    uuid: 793f4d71-2d11-471f-83d7-a071a1c26ed0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 300
+      anchor: center-center

@@ -1,0 +1,9 @@
+uuid: acc35373-5d23-43fa-b5ec-ac4b6711722c
+langcode: en
+status: true
+dependencies: {  }
+name: Sliders
+vid: sliders
+description: 'Sliders used on the side.'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,23 @@
+uuid: f3d82320-d9f0-4ad9-a39c-1709693c2a69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.officer
+  module:
+    - metatag
+id: node.officer.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: officer
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

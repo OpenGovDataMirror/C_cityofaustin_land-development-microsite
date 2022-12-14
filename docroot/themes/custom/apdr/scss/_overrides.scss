@@ -1,0 +1,207 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/alert";
+@import "component/ajax";
+@import "component/field";
+@import "component/file";
+@import "component/filter";
+@import "component/form";
+@import "component/icon";
+@import "component/navbar";
+@import "component/node";
+@import "component/panel";
+@import "component/progress-bar";
+@import "component/table-drag";
+@import "component/tabs";
+@import "component/toolbar";
+
+
+// jQuery UI style overrides.
+@import "jquery-ui/autocomplete";
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+h1.page-header {
+  margin-top: 30px;
+  border-bottom: 0;
+  font-family: oswald, serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+ol, ul {
+  padding-left: 1.5em;
+  .popover &:last-child {
+    margin-bottom: 0;
+  }
+}
+.jumbotron {
+  background-color: $brand-gold;
+}
+
+// Page header.
+.page-header {
+  margin-top: 0;
+}
+
+// Footer.
+.footer {
+  margin-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border-top: 1px solid #E5E5E5;
+}
+
+// Paragraphs.
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0;
+}
+
+// Help region.
+.region-help {
+  > .glyphicon {
+    font-size: $font-size-large;
+    float: left;
+    margin: -0.05em 0.5em 0 0;
+  }
+  .block {
+    overflow: hidden;
+  }
+}
+
+
+.help-block, .control-group .help-inline {
+  color: $gray-light;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.btn {
+  transition: all 0.5s ease-in-out;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.responsive-image img {
+  width: 100%;
+}
+
+.nav-tabs {
+  @include sm-min {
+    display: flex;
+    justify-content: center;
+  }
+
+  margin: 30px auto;
+  border-bottom: 0;
+
+  li {
+    margin-bottom: 0;
+    border: 0;
+    @include xs {
+      float: none;
+
+    }
+    a {
+      @include border-radius(30px);
+      @include box-sizing(border-box);
+      text-align: center;
+      margin: 0 5px;
+      border: 0;
+      @include sm-min {
+        min-width: 50px;
+      }
+      text-transform: uppercase;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        border-bottom: 0;
+        margin-bottom: 0;
+        border: 0;
+      }
+
+      &:focus {
+        background: $brand-primary;
+        color: #fff;
+        border: 0;
+        color: $brand-gold;
+      }
+    }
+    &.active {
+      a {
+        background: $brand-primary;
+        color: #fff;
+        border: 0;
+        color: $brand-gold;
+
+        &:focus {
+          background: $brand-primary;
+          color: #fff;
+          border: 0;
+          color: $brand-gold;
+        }
+      }
+    }
+  }
+}
+
+#top-bar {
+  .col-sm-12 {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    .img-responsive,
+    #block-contactformheroimage img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+table {
+  border: none;
+  width: 100%;
+  tr:nth-child(even) {
+    background: $gray-lighter;
+  }
+  tr:nth-child(odd) {
+    background: #fff;
+  }
+  td {
+    border: none;
+    padding: 3px;
+  }
+  th {
+    background: $brand-primary;
+    color: #fff;
+    padding: 3px;
+  }
+}
+
+#block-beyondthebadge {
+  .field--name-body {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

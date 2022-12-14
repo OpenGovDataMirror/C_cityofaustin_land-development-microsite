@@ -1,0 +1,34 @@
+uuid: 04b0f43a-bcad-4ec4-8050-d3268e581082
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_sliders
+  module:
+    - system
+    - views
+  theme:
+    - apdr
+id: views_block__event_sliders_block_1
+theme: apdr
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:event_sliders-block_1'
+settings:
+  id: 'views_block:event_sliders-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  arguments:
+    tid:
+      type: taxonomy_index_tid
+      value: '1'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

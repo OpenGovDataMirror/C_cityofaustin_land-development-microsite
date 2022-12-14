@@ -1,0 +1,41 @@
+uuid: f6eae311-4d91-40bc-9f61-c7bf958a9569
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.accordion_page.body
+    - field.field.node.accordion_page.field_accordion
+    - field.field.node.accordion_page.field_hero_image
+    - field.field.node.accordion_page.field_meta_tags
+    - node.type.accordion_page
+  module:
+    - text
+    - user
+id: node.accordion_page.teaser
+targetEntityType: node
+bundle: accordion_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_accordion: true
+  field_hero_image: true
+  field_meta_tags: true

@@ -1,0 +1,174 @@
+.path-testimonials {
+	.view-testimonials {
+		.views-field-field-image {
+			margin-right: 20px;
+			margin-bottom: 20px;
+			float: left;
+
+			img {
+				@include circlebordered(200px, 5px, $gray-lighter);
+				 -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.9));
+  			filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+			}
+		}
+		.views-row {
+			background-color: $brand-primary;
+			color: #fff;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			min-height: 320px;
+		}
+		.views-row:nth-child(2n) {
+			background-color: $gray-lighter;
+			color: #333333;
+		}
+		.views-field-nothing {
+			margin-top: 20px;
+		}
+		h3 {
+			margin-left: 20px;
+		}
+		h3:before {
+			content: "-";
+			margin-right: 10px;
+		}
+		blockquote {
+		  quotes: "“" "”" "‘" "’";
+		  border: none;
+		}
+		blockquote:before {
+		    content: open-quote;
+		    font-size: 60px;
+		    color: #fff;
+		    margin-bottom: 0;
+				color: #fff;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				height: 40px;
+				display: block;
+				margin-top: -10px;
+				margin-bottom: 0;
+		}
+		blockquote:after {
+		    content: close-quote;
+		    font-size: 60px;
+		    color: #fff;
+		    font-family: Georgia, "Times New Roman", Times, serif;
+				height: 40px;
+				display: block;
+				float: right;
+				margin-top: -10px;
+				margin-bottom: 0;
+		}
+		.views-row:nth-child(2n) {
+			blockquote:before, blockquote:after {
+				color: #333333;
+			}
+		}
+	}
+}
+
+.context-node-20 {
+	#block-views-block-testimonials-block-1 {
+		h2 {
+		  background: $brand-gold;
+			font-size: 30px;
+			padding: 25px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $brand-primary;
+			margin-bottom: 50px;
+			margin-top: 30px;
+			font-size: 50px;
+		}
+	}
+	#views-bootstrap-testimonials-block-1 {
+		background-color: $brand-primary;
+		.item {
+			@include xs {
+				min-height: 800px;
+			}
+			@include sm-min {
+				min-height: 600px;
+			}
+			@include md-min {
+				min-height: 400px;
+			}
+		}
+		.carousel-caption {
+			@include xs {
+				left: 0;
+				right: 0;
+			}
+
+			text-align: left;
+
+			img {
+				@include xs {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				@include sm-min {
+					float: left;
+				}
+
+				@include circlebordered(200px, 5px, $gray-lighter);
+				 -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.9));
+  				filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+  				margin-right: 20px;
+				margin-bottom: 20px;
+				margin-top: 30px;
+			}
+			h3 {
+				@include xs {
+					margin: 0 15px;
+				}
+
+				@include sm-min {
+					margin-left: 220px;
+				}
+			}
+			h3:before {
+				content: "-";
+				margin-right: 10px;
+			}
+			blockquote {
+				@include xs {
+					font-size: 15px;
+				}
+
+			  border: none;
+				min-height: 200px;
+			  quotes: "“" "”" "‘" "’";
+			}
+			blockquote:before {
+			    content: open-quote;
+			    font-size: 60px;
+			    color: #fff;
+			    margin-bottom: 0;
+					color: #fff;
+					font-family: Georgia, "Times New Roman", Times, serif;
+					height: 40px;
+					display: block;
+					margin-top: -10px;
+					margin-bottom: 0;
+			}
+			blockquote:after {
+			    content: close-quote;
+			    font-size: 60px;
+			    color: #fff;
+			    font-family: Georgia, "Times New Roman", Times, serif;
+					height: 40px;
+					display: block;
+					float: right;
+					margin-top: -10px;
+					margin-bottom: 0;
+			}
+			.btn {
+				display: block;
+				margin: 15px auto;
+				width: 130px;
+			}
+		}
+	}
+}

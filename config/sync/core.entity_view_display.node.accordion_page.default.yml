@@ -1,0 +1,46 @@
+uuid: 2da9271f-b301-427c-b596-771a13fc68ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.accordion_page.body
+    - field.field.node.accordion_page.field_accordion
+    - field.field.node.accordion_page.field_hero_image
+    - field.field.node.accordion_page.field_meta_tags
+    - node.type.accordion_page
+  module:
+    - metatag
+    - text
+    - user
+id: node.accordion_page.default
+targetEntityType: node
+bundle: accordion_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_accordion: true
+  field_hero_image: true

@@ -1,0 +1,16 @@
+langcode: en
+status: false
+mapping:
+  type: simple
+  domain: d21cfpddxpy84e.cloudfront.net
+  conditions:
+    extensions:
+      - jpg
+      - jpeg
+      - png
+      - gif
+      - mp4
+farfuture:
+  status: false
+_core:
+  default_config_hash: BgB9K3XGWXgfmhmI8i4iizu5x86GnwpXDr9MIJ-6XuQ

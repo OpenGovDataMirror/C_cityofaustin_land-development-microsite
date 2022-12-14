@@ -1,0 +1,22 @@
+uuid: 9df0475e-2846-4212-9a53-a12bcb0dc504
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: officer
+label: Officer
+type: 'canonical_entities:node'
+pattern: 'officer/[node:title]'
+selection_criteria:
+  b599c5ac-1b72-49b0-9ce1-1dfce12fd920:
+    id: node_type
+    bundles:
+      officer: officer
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b599c5ac-1b72-49b0-9ce1-1dfce12fd920
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,60 @@
+uuid: 76d561bf-5676-4a3d-9568-5602c7040760
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.intro.field_left_body
+    - field.field.paragraph.intro.field_right_body
+    - field.field.paragraph.intro.field_title_left
+    - field.field.paragraph.intro.field_title_right
+    - paragraphs.paragraphs_type.intro
+  module:
+    - content_moderation
+    - text
+id: paragraph.intro.default
+targetEntityType: paragraph
+bundle: intro
+mode: default
+content:
+  field_left_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_right_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title_left:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_right:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 4
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

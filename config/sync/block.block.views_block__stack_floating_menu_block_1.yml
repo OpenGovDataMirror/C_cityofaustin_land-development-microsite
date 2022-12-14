@@ -1,0 +1,41 @@
+uuid: 4b7109ee-649b-41fa-81e7-e9b3e0cfa455
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.stack_floating_menu
+  module:
+    - ctools
+    - node
+    - views
+  theme:
+    - apdr
+id: views_block__stack_floating_menu_block_1
+theme: apdr
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'views_block:stack_floating_menu-block_1'
+settings:
+  id: 'views_block:stack_floating_menu-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      stacked_layout: stacked_layout
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      stacked_layout: stacked_layout
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

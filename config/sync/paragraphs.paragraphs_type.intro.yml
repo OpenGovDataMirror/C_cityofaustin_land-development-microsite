@@ -1,0 +1,9 @@
+uuid: cb8a2baf-787a-4f45-ab73-5e4bc06cbf44
+langcode: en
+status: true
+dependencies: {  }
+id: intro
+label: Intro
+icon_uuid: null
+description: 'Paragraph type used to display a intro of a landing page'
+behavior_plugins: {  }

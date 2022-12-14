@@ -1,0 +1,10 @@
+uuid: 61e181bc-d78f-49ed-9c0e-af9ac177af61
+langcode: en
+status: true
+dependencies: {  }
+id: apdr_facebook
+label: 'APDR Facebook'
+description: 'Facebook migration'
+source_type: ''
+module: null
+shared_configuration: null

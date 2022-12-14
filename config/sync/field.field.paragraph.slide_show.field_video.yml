@@ -1,0 +1,26 @@
+uuid: 72808ff8-1197-4616-82bf-34d3bfd5240c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.slide_show
+  module:
+    - video
+id: paragraph.slide_show.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: slide_show
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

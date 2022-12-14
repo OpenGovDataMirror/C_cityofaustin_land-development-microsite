@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains predis.module
+ */
+
+/**
+ * Implements hook_help().
+ */
+
+function predis_help($path, $arg)
+{
+  switch ($path) {
+    case 'admin/help#predis':
+      $output = 'A wrapper for Predis library';
+      return $output;
+    break;
+  }
+}
+
+function predis_permissions()
+{
+  return [
+    'predis administration' => [
+      'title' => t('Predis administration'),
+      'restrict access' => TRUE,
+    ], 
+  ];
+}

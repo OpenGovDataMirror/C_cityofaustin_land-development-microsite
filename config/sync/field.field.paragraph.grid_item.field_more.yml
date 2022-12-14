@@ -1,0 +1,21 @@
+uuid: 175bfa02-51f8-475d-8d00-002cf9e144bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_more
+    - paragraphs.paragraphs_type.grid_item
+  module:
+    - text
+id: paragraph.grid_item.field_more
+field_name: field_more
+entity_type: paragraph
+bundle: grid_item
+label: More
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

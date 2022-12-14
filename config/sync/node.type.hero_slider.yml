@@ -1,0 +1,17 @@
+uuid: 66d22439-5825-48b4-ade4-a877d568fefe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Hero Slider'
+type: hero_slider
+description: 'Use <em>hero slider</em> to add items to a hero slider.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

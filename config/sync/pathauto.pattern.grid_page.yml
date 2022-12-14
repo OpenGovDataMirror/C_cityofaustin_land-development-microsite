@@ -1,0 +1,22 @@
+uuid: 5ad754c2-0a12-4c84-8eb5-ebce0d9a51ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: grid_page
+label: 'Grid page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  4e7d3955-8440-4625-9fd6-8bb04858e84b:
+    id: node_type
+    bundles:
+      grid_page: grid_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4e7d3955-8440-4625-9fd6-8bb04858e84b
+selection_logic: and
+weight: -5
+relationships: {  }

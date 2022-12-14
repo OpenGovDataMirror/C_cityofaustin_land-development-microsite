@@ -1,0 +1,41 @@
+uuid: b50185f8-58a9-4b2a-bf9c-e99d299cd165
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.stacked_layout.field_hero_image
+    - field.field.node.stacked_layout.field_meta_tags
+    - field.field.node.stacked_layout.field_stack
+    - node.type.stacked_layout
+  module:
+    - entity_reference_revisions
+    - metatag
+    - user
+id: node.stacked_layout.default
+targetEntityType: node
+bundle: stacked_layout
+mode: default
+content:
+  field_meta_tags:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_stack:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_hero_image: true

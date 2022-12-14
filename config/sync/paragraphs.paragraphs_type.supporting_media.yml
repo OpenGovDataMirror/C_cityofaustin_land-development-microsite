@@ -1,0 +1,9 @@
+uuid: 6fb8da34-7ae2-4b2c-b962-f181f66df6f9
+langcode: en
+status: true
+dependencies: {  }
+id: supporting_media
+label: 'Supporting media'
+icon_uuid: null
+description: 'Paragraph type used to display a media on a landing page'
+behavior_plugins: {  }

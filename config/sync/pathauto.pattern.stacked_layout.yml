@@ -1,0 +1,22 @@
+uuid: e7be5287-c362-4b3f-9a69-9071621b61f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: stacked_layout
+label: 'Stacked layout'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  d147c0d9-adef-4d58-957d-4fc35966c07c:
+    id: node_type
+    bundles:
+      stacked_layout: stacked_layout
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d147c0d9-adef-4d58-957d-4fc35966c07c
+selection_logic: and
+weight: -5
+relationships: {  }

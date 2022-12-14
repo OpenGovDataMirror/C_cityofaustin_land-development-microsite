@@ -1,0 +1,39 @@
+uuid: 08ceb3db-dbb4-4600-a966-2589e25d8d82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_resource
+    - node.type.microsite
+    - paragraphs.paragraphs_type.ms_image_resource
+    - paragraphs.paragraphs_type.ms_text_resource
+  module:
+    - entity_reference_revisions
+id: node.microsite.field_ms_resource
+field_name: field_ms_resource
+entity_type: node
+bundle: microsite
+label: Resource
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ms_image_resource: ms_image_resource
+      ms_text_resource: ms_text_resource
+    target_bundles_drag_drop:
+      ms_image_resource:
+        enabled: true
+        weight: 4
+      ms_text_resource:
+        enabled: true
+        weight: 5
+      slide_show:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

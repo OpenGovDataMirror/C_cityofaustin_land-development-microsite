@@ -1,0 +1,55 @@
+uuid: c1eca31d-7f88-4150-90d3-c3d7aa1a18e0
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.microsite.field_ms_hero_image
+    - field.field.node.microsite.field_ms_hero_link
+    - field.field.node.microsite.field_ms_hero_style
+    - field.field.node.microsite.field_ms_hero_subtext
+    - field.field.node.microsite.field_ms_hero_title
+    - field.field.node.microsite.field_ms_links_display_style
+    - field.field.node.microsite.field_ms_links_links
+    - field.field.node.microsite.field_ms_links_title
+    - field.field.node.microsite.field_ms_resource
+    - field.field.node.microsite.field_ms_resource_title
+    - field.field.node.microsite.field_ms_video_background_image
+    - field.field.node.microsite.field_ms_video_display_style
+    - field.field.node.microsite.field_ms_video_photo_credit
+    - field.field.node.microsite.field_ms_video_subtext
+    - field.field.node.microsite.field_ms_video_title
+    - field.field.node.microsite.field_ms_video_video_embed
+    - node.type.microsite
+  module:
+    - user
+id: node.microsite.teaser
+targetEntityType: node
+bundle: microsite
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ms_hero_image: true
+  field_ms_hero_link: true
+  field_ms_hero_style: true
+  field_ms_hero_subtext: true
+  field_ms_hero_title: true
+  field_ms_links_display_style: true
+  field_ms_links_links: true
+  field_ms_links_title: true
+  field_ms_resource: true
+  field_ms_resource_title: true
+  field_ms_video_background_image: true
+  field_ms_video_display_style: true
+  field_ms_video_embed_type: true
+  field_ms_video_image_embed: true
+  field_ms_video_map_embed: true
+  field_ms_video_photo_credit: true
+  field_ms_video_subtext: true
+  field_ms_video_title: true
+  field_ms_video_video_embed: true

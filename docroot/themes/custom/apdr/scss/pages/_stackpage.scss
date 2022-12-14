@@ -1,0 +1,136 @@
+.page-node-type-stacked-layout {
+	
+	h1.page-header { display: none; }
+	
+	.field--name-field-stack {
+		> .field--item {
+			background: #fff;
+			padding: 15px;
+			
+			@include sm-min {
+				padding: 60px 15px;
+			}
+			
+			.main-title h2 {
+				font-size: 28px;
+				line-height: 34px;
+				margin-top: 0;
+			}
+
+			h3.intro-title {
+				margin-top: 0;
+				margin-bottom: 0;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				margin-top: 0;
+			}	
+			
+			.title-separator {
+				width: 90px;
+				height: 1px;
+				border: 0;
+				border-top: 3px solid $text-color;
+				margin: 30px 0 27px 0;
+			}
+			
+			.field--name-field-body {
+				p {
+					font-size: 17px;
+					line-height: 23px;
+				}
+			}
+			
+			&:nth-child(odd) {
+				background: #eee;
+			}
+			
+			&:nth-child(even) {
+				background: #fff;
+			}
+
+			&:first-child {
+				background: $brand-primary;
+				color: #fff;
+				padding: 100px 15px 15px 15px;
+				
+				@include sm-min {
+					padding: 100px 15px 60px 15px;
+				}			
+				
+				.col-md-9 {
+ 					width: 100% !important;
+				}
+				a {
+					color: $brand-gold;
+				}
+				.main-title h2 {
+					font-size: 34px;
+					line-height: 40px;
+				}
+				
+				h3.intro-title {
+					font-size: 18px;
+					line-height: 22px;
+				}
+				
+				.title-separator {
+					border-bottom: 3px solid #fff;
+				}
+			}			
+		}
+	}
+	
+  .paragraph--type--stack {
+    .supporting-images {
+	    
+	    .col-sm-4 {
+		    padding-bottom: 15px;
+		    padding-top: 15px;
+		    overflow: hidden;
+		    position: relative;
+
+		    img {
+			    width: 100%;
+			    height: auto;
+		    }
+		    
+	      h3 {
+					font-size: 14px;
+					line-height: 18px;
+					font-weight: 400px;
+					margin-top: 0;
+					margin-bottom: 0;
+					color: #fff;
+		      background: #000;
+		      padding: 10px;
+	      }
+	    }
+    }
+  }
+  
+  #block-views-block-stack-floating-menu-block-1 {
+	  display: none;
+	  transition: position 0.5s ease-in-out;
+	  @include md-min {
+		  width: 25%;
+			position: absolute;
+			right: 0;
+			border: 1x solid aqua;
+			z-index: 100;		  
+	  }
+	  
+	  .views-row {
+		  a {
+			  font-size: 18px;
+			  line-height: 30px;
+		  }
+	  }
+	  
+	  &.fixed {
+		  position: fixed;
+		  top: 175px;
+		  right: 0;
+	  }
+  }
+}

@@ -1,0 +1,19 @@
+uuid: 2ff7f598-2949-47ef-abbb-d282bbb0d669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_hero_title
+    - node.type.microsite
+id: node.microsite.field_ms_hero_title
+field_name: field_ms_hero_title
+entity_type: node
+bundle: microsite
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

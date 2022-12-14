@@ -1,0 +1,19 @@
+uuid: 934e8d5e-93a4-4083-a729-97f5618115f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - iframe
+    - node
+id: node.field_ms_video_map_embed
+field_name: field_ms_video_map_embed
+entity_type: node
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

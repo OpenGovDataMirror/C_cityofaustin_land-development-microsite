@@ -1,0 +1,84 @@
+.page-node-type-event {
+  .event-image {
+    margin-bottom: 60px;
+  }
+}
+
+//Event list page.
+.path-events {
+	#block-eventslistingheroimage {
+		img {
+			width: 100%;
+		}
+	}
+	.view-events {
+		margin-top: 40px;
+		
+		.row {
+			display: block;
+			transition: all 0.4s ease-in-out;	
+
+			@include sm-min {
+				border: 1px solid $gray-lighter;				
+			}
+
+			margin-bottom: 10px;
+			font-size: 14px;
+			@include xs {
+				margin-bottom: 30px;					
+			}
+			
+			.event-date {
+				@include box-sizing(border-box);
+				background-color: $brand-primary;
+				color: #fff;
+				text-align: center;
+				height: 135px;
+				
+				h2 {
+					font-weight: normal;
+					font-size: 40px;
+					padding-top: 20px;
+					margin-top: 0;
+				}
+				
+				h3 {
+					text-transform: uppercase;
+					font-weight: normal;
+				}
+			}	
+			
+			.event-photo {
+				padding-left: 0;
+				padding-right: 0;
+				img {
+					max-width: 100%;
+					height: 135px;
+					
+					@include sm-min {
+						width: 220px;
+					}
+				}
+			}
+			
+			.event-data {
+				@include box-sizing(border-box);
+				padding: 15px;
+				
+				h2 {
+					font-size: 22px;
+					
+					a {
+						color: $brand-primary;
+						transition: all 0.4s ease-in-out;
+						text-decoration: none;
+						
+						&:hover {
+							color: $brand-gold;
+						}
+					}
+				}
+			}
+		}
+	}
+}

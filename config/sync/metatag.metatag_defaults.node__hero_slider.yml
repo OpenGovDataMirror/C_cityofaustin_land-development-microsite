@@ -1,0 +1,8 @@
+uuid: 8bcf9d5a-da68-4d76-b0ad-3fd3db099571
+langcode: en
+status: true
+dependencies: {  }
+id: node__hero_slider
+label: 'Content: Hero Slider'
+tags:
+  robots: noindex

@@ -1,0 +1,108 @@
+// this will apply to all webforms
+.webform-submission-form {
+  width: 100%;
+  clear: both;
+  padding-top: 60px;
+
+  .form-control {
+    clear: both;
+  }
+	.form-type-textfield,
+	.form-type-email,
+	.form-type-select,
+	.form-type-tel,
+	.form-type-textarea {
+		> label { // theme the label for textfields, selects, email (all fields that look the same)
+      background-color: $brand-primary;
+      color: #FFF;
+      float: left;
+      padding: 1.4em;
+      text-transform: uppercase;
+		}
+	}
+	label {
+		width: 100%;
+	}
+	input {
+		width: 100%;
+	}
+	.form-type-textfield,
+	.form-type-email {
+		> input { // theme the input field
+
+		}
+	}
+
+	.form-type-select {
+		> select { // theme the selectfield
+
+		}
+	}
+
+	.form-type-textarea {
+		> input { // theme the input field for text areas because it behaves differently
+
+		}
+
+		textarea {
+
+		}
+	}
+}
+.path-webform {
+	.glyphicon {
+		font-size: 2em;
+		float: left;
+		padding-right: 10px;
+		padding-top: 5px;
+	}
+	.mapouter {
+		width: 100% !important;
+		.gmap_canvas {
+			width: 100% !important;
+		}
+	}
+	#block-contactmap {
+		clear: both;
+	}
+	#block-contactinfo, #block-contactmap {
+		width: 100%;
+		padding-right: 0;
+	}
+	#block-contactmap {
+		position: relative;
+  		top: auto;
+	}
+	#block-contactinfo {
+		ul {
+			padding-left: 0;
+			list-style: none;
+			li {
+				padding-bottom: 20px;
+			}
+		}
+	}
+	#block-applylaterheroimage {
+		img	{
+			width: 100%;
+		}
+	}
+}
+
+
+@media screen and (min-width: $screen-sm) {
+	#webform-submission-contact-form-add-form {
+		width: 50%;
+  		float: right;
+	}
+	.path-webform {
+		#block-contactinfo, #block-contactmap {
+			float: left;
+			width: 50%;
+			padding-right: 40px;
+		}
+		#block-contactmap {
+			clear: none;
+		}
+	}
+}

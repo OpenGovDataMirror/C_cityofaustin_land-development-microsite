@@ -1,0 +1,159 @@
+.footer {
+  background: $brand-navy;
+  border-top: 0;
+  color: $gray-lighter;
+  font-family: $font-family-coa;
+  margin-top: 0;
+  padding-bottom: 0;
+  position: relative;
+
+  .region-footer {
+    @include md-min {
+      padding-left: 25%;
+    }
+
+    @include sm-max {
+      text-align: center;
+    }
+
+    height: 100%;
+    position: relative;
+
+  }
+
+  > .container {
+    @include sm {
+      width: 100%;
+    }
+
+    @include ultra-wide {
+      width: 100%;
+    }
+  }
+
+  #block-footertext {
+    @include md-min {
+      position: absolute;
+      right: 45px;
+      text-align: right;
+    }
+
+    .field--name-body {
+      font-size: 14px;
+      line-height: 28px;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $gray-lighter;
+        transition: .5s ease-in-out;
+
+        &:hover {
+          color: $brand-gold;
+        }
+      }
+    }
+  }
+
+  #block-footer {
+    @include md-min {
+      width: 33%;
+    }
+
+    .nav {
+      li {
+        a {
+          color: $gray-lighter;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 10px 15px;
+          text-align: center;
+          transition: .5s ease-in-out;
+
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+
+  #block-footersocialmedia {
+    @include md-min {
+      width: 33%;
+    }
+
+    .nav {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 24px;
+          padding: 0 25px;
+          text-indent: -1000em;
+          width: 24px;
+
+          &.icon-instagram {
+            background-image: url('../images/icons/instagram-white.svg');
+            height: 31px;
+          }
+
+          &.icon-twitter {
+            background-image: url('../images/icons/twitter-white.svg');
+          }
+
+          &.icon-facebook {
+            background-image: url('../images/icons/facebook-white.svg');
+          }
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  #block-twitterblock {
+    -webkit-overflow-scrolling: touch;
+    clear: none;
+    height: 350px;
+    overflow: auto;
+  }
+
+
+  #block-footercopyrighttext {
+    clear: both;
+    padding: 20px;
+
+    .field--name-body {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}
+
+.coa-seal {
+  @include md-min {
+    left: 40px;
+    position: absolute;
+    top: 45px;
+  }
+
+  background: url('../images/city-seal.svg') left top no-repeat;
+  background-size: 120px 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  text-indent: -10000em;
+  top: -20px;
+  width: 120px;
+}

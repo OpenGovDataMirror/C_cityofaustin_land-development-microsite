@@ -1,0 +1,22 @@
+uuid: 7ba8ea1a-4804-482c-8f9a-1d419b98c5f6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - apdr
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: apdr_breadcrumbs
+theme: apdr
+region: header
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

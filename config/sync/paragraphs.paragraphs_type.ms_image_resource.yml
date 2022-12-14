@@ -1,0 +1,9 @@
+uuid: 4635833e-b3e4-429a-b980-412b8289f300
+langcode: en
+status: true
+dependencies: {  }
+id: ms_image_resource
+label: 'Image Resource'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

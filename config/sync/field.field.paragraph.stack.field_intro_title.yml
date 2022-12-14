@@ -1,0 +1,19 @@
+uuid: 4f2a9cdd-35f1-4398-84bd-46ae41a31939
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_intro_title
+    - paragraphs.paragraphs_type.stack
+id: paragraph.stack.field_intro_title
+field_name: field_intro_title
+entity_type: paragraph
+bundle: stack
+label: 'Intro title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: 9dc3b370-85a8-4846-b355-a6ba08baadc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_links_links
+    - node.type.microsite
+    - paragraphs.paragraphs_type.ms_links_image_link
+  module:
+    - entity_reference_revisions
+id: node.microsite.field_ms_links_links
+field_name: field_ms_links_links
+entity_type: node
+bundle: microsite
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ms_links_image_link: ms_links_image_link
+    target_bundles_drag_drop:
+      ms_image_resource:
+        weight: 5
+        enabled: false
+      ms_links_image_link:
+        enabled: true
+        weight: 6
+      ms_text_resource:
+        weight: 7
+        enabled: false
+      slide_show:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

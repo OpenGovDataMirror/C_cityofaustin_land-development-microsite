@@ -1,0 +1,23 @@
+uuid: 80040bb4-fdad-41d6-8e70-ba3c973c8e4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.accordion_page
+  module:
+    - metatag
+id: node.accordion_page.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: accordion_page
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,21 @@
+uuid: 1ca25264-6594-41f0-941e-4b48bd75b8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_links_display_style
+    - node.type.microsite
+  module:
+    - options
+id: node.microsite.field_ms_links_display_style
+field_name: field_ms_links_display_style
+entity_type: node
+bundle: microsite
+label: 'Display Style'
+description: 'Style "Spaced" places margins around your image links. Not Spaced sets each image next to the other.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

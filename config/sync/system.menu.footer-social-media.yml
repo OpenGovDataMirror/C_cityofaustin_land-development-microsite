@@ -1,0 +1,8 @@
+uuid: f5d6147c-7cc1-446e-ba7b-81b0915255ed
+langcode: en
+status: true
+dependencies: {  }
+id: footer-social-media
+label: 'Footer Social Media'
+description: 'Social Media links that appear in the footer'
+locked: false

@@ -1,0 +1,21 @@
+uuid: b0342e88-8311-40f5-8796-325dd3f089b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_body
+    - paragraphs.paragraphs_type.intro
+  module:
+    - text
+id: paragraph.intro.field_left_body
+field_name: field_left_body
+entity_type: paragraph
+bundle: intro
+label: 'Left Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

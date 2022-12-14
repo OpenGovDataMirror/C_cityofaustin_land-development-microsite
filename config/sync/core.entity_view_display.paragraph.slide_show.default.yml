@@ -1,0 +1,50 @@
+uuid: 83c35886-ff07-4dbe-980e-ee1521436592
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_show.field_body
+    - field.field.paragraph.slide_show.field_image
+    - field.field.paragraph.slide_show.field_video
+    - image.style.hero_slider
+    - paragraphs.paragraphs_type.slide_show
+  module:
+    - image
+    - text
+    - video
+id: paragraph.slide_show.default
+targetEntityType: paragraph
+bundle: slide_show
+mode: default
+content:
+  field_body:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: hero_slider
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_video:
+    weight: 1
+    label: hidden
+    settings:
+      autoplay: true
+      width: '1920'
+      height: '1080'
+      controls: true
+      loop: false
+      muted: false
+      preload: none
+    third_party_settings: {  }
+    type: video_player_list
+    region: content
+hidden: {  }

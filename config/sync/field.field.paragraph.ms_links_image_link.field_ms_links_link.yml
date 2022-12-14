@@ -1,0 +1,23 @@
+uuid: 87474ce3-d080-4f33-94de-8c5836eadf45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ms_links_link
+    - paragraphs.paragraphs_type.ms_links_image_link
+  module:
+    - link
+id: paragraph.ms_links_image_link.field_ms_links_link
+field_name: field_ms_links_link
+entity_type: paragraph
+bundle: ms_links_image_link
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

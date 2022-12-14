@@ -1,0 +1,15 @@
+uuid: 768ed7ec-ecda-4f65-a479-af62f1ed9555
+langcode: en
+status: true
+dependencies: {  }
+name: ms_image_embed
+label: 'Image Embed'
+effects:
+  7822534e-a8fc-4857-91bc-d8dfbf6a75e1:
+    uuid: 7822534e-a8fc-4857-91bc-d8dfbf6a75e1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 300
+      anchor: center-center

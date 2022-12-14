@@ -1,0 +1,50 @@
+uuid: 6a92b042-5af5-4e26-92ee-795bea86f12a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_show.field_body
+    - field.field.paragraph.slide_show.field_image
+    - field.field.paragraph.slide_show.field_video
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slide_show
+  module:
+    - image
+    - text
+    - video
+id: paragraph.slide_show.default
+targetEntityType: paragraph
+bundle: slide_show
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_video:
+    weight: 1
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+      file_extensions: 'mp4 ogv webm'
+      max_filesize: ''
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: video_upload
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

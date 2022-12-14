@@ -1,0 +1,20 @@
+uuid: 7af56c85-cfbd-4c95-9ee7-4b0fc3934c18
+langcode: en
+status: true
+dependencies:
+  theme:
+    - apdr
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: apdr_local_actions
+theme: apdr
+region: content
+weight: -11
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

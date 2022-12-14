@@ -1,0 +1,19 @@
+uuid: d0b13e86-9bc6-4f16-bee7-02d1097cafd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.officer
+id: node.officer.field_email
+field_name: field_email
+entity_type: node
+bundle: officer
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

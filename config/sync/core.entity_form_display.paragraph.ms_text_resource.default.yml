@@ -1,0 +1,26 @@
+uuid: 044d7e4f-03d6-4dab-badd-cb0b121aac4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ms_text_resource.field_ms_resource_link
+    - paragraphs.paragraphs_type.ms_text_resource
+  module:
+    - link
+id: paragraph.ms_text_resource.default
+targetEntityType: paragraph
+bundle: ms_text_resource
+mode: default
+content:
+  field_ms_resource_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

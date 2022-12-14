@@ -1,0 +1,21 @@
+uuid: b4c96dc2-17ed-4c18-99d8-063813328317
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ms_video_display_style
+    - node.type.microsite
+  module:
+    - options
+id: node.microsite.field_ms_video_display_style
+field_name: field_ms_video_display_style
+entity_type: node
+bundle: microsite
+label: 'Display Style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

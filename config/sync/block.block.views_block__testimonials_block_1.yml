@@ -1,0 +1,30 @@
+uuid: bf02fd95-7311-4933-a1f5-bf14f97f89b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.testimonials
+  module:
+    - system
+    - views
+  theme:
+    - apdr
+id: views_block__testimonials_block_1
+theme: apdr
+region: below_content
+weight: -18
+provider: null
+plugin: 'views_block:testimonials-block_1'
+settings:
+  id: 'views_block:testimonials-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /academy
+    negate: false
+    context_mapping: {  }

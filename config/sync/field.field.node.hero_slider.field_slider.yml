@@ -1,0 +1,29 @@
+uuid: 978cdb08-c243-49df-9bfd-8fc3d1f7ae9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider
+    - node.type.hero_slider
+    - taxonomy.vocabulary.sliders
+id: node.hero_slider.field_slider
+field_name: field_slider
+entity_type: node
+bundle: hero_slider
+label: Slider
+description: 'The slider this slide is to appear in.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sliders: sliders
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

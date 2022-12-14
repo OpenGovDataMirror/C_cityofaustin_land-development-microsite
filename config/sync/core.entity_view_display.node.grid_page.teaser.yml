@@ -1,0 +1,41 @@
+uuid: 3088aeac-290e-44d8-be8f-6c55e96d1d18
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.grid_page.body
+    - field.field.node.grid_page.field_grid_items
+    - field.field.node.grid_page.field_hero_image
+    - field.field.node.grid_page.field_meta_tags
+    - node.type.grid_page
+  module:
+    - text
+    - user
+id: node.grid_page.teaser
+targetEntityType: node
+bundle: grid_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_grid_items: true
+  field_hero_image: true
+  field_meta_tags: true

@@ -1,0 +1,577 @@
+uuid: f0cc31a2-ca8d-4eeb-aa3d-0e598b892f8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.microsite.field_ms_hero_image
+    - field.field.node.microsite.field_ms_hero_link
+    - field.field.node.microsite.field_ms_hero_style
+    - field.field.node.microsite.field_ms_hero_subtext
+    - field.field.node.microsite.field_ms_hero_title
+    - field.field.node.microsite.field_ms_links_display_style
+    - field.field.node.microsite.field_ms_links_links
+    - field.field.node.microsite.field_ms_links_title
+    - field.field.node.microsite.field_ms_resource
+    - field.field.node.microsite.field_ms_resource_title
+    - field.field.node.microsite.field_ms_video_background_image
+    - field.field.node.microsite.field_ms_video_display_style
+    - field.field.node.microsite.field_ms_video_embed_type
+    - field.field.node.microsite.field_ms_video_image_embed
+    - field.field.node.microsite.field_ms_video_map_embed
+    - field.field.node.microsite.field_ms_video_photo_credit
+    - field.field.node.microsite.field_ms_video_subtext
+    - field.field.node.microsite.field_ms_video_title
+    - field.field.node.microsite.field_ms_video_video_embed
+    - image.style.ms_image_embed
+    - node.type.microsite
+  module:
+    - entity_reference_revisions
+    - field_group
+    - iframe
+    - image
+    - layout_builder
+    - panelizer
+    - user
+    - video_embed_field
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          23423086-67d0-4b9a-a195-6ebe71cbf258:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: author
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: 23423086-67d0-4b9a-a195-6ebe71cbf258
+          3265f9de-01e0-4143-9e96-d253396c5602:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: 3265f9de-01e0-4143-9e96-d253396c5602
+          c5519ec3-46a6-4ba5-bf84-c9519e082fa4:
+            id: 'entity_field:node:field_ms_hero_image'
+            label: Image
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: image
+              settings:
+                image_style: ''
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 101
+            uuid: c5519ec3-46a6-4ba5-bf84-c9519e082fa4
+          ed494cd0-bf75-4620-969b-fd0ad84328c4:
+            id: 'entity_field:node:field_ms_hero_link'
+            label: Link
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: link
+              settings:
+                trim_length: 80
+                url_only: false
+                url_plain: false
+                rel: ''
+                target: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 104
+            uuid: ed494cd0-bf75-4620-969b-fd0ad84328c4
+          ad36a8e0-c41e-4d79-b75f-8443143a7213:
+            id: 'entity_field:node:field_ms_hero_style'
+            label: 'Display Style'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: list_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 105
+            uuid: ad36a8e0-c41e-4d79-b75f-8443143a7213
+          d5191e79-6963-4555-aeca-502be92c3d96:
+            id: 'entity_field:node:field_ms_hero_subtext'
+            label: Subtext
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 103
+            uuid: d5191e79-6963-4555-aeca-502be92c3d96
+          1e8457fd-84a8-41d3-a82d-6076a344f315:
+            id: 'entity_field:node:field_ms_hero_title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 102
+            uuid: 1e8457fd-84a8-41d3-a82d-6076a344f315
+          87719044-378f-4bd5-a321-e663cab2fbca:
+            id: 'entity_field:node:field_ms_links_display_style'
+            label: 'Display Style'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: list_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 115
+            uuid: 87719044-378f-4bd5-a321-e663cab2fbca
+          1f8262b5-82f2-4f57-922f-47d9cfbc69ae:
+            id: 'entity_field:node:field_ms_links_links'
+            label: Links
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: entity_reference_revisions_entity_view
+              settings:
+                view_mode: default
+                link: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 116
+            uuid: 1f8262b5-82f2-4f57-922f-47d9cfbc69ae
+          b696b47f-5c14-4d4e-a766-29d6a09214f0:
+            id: 'entity_field:node:field_ms_links_title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 114
+            uuid: b696b47f-5c14-4d4e-a766-29d6a09214f0
+          6c0e03cc-2942-4a0c-8ab8-381a618edd70:
+            id: 'entity_field:node:field_ms_resource'
+            label: Resource
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: entity_reference_revisions_entity_view
+              settings:
+                view_mode: default
+                link: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 113
+            uuid: 6c0e03cc-2942-4a0c-8ab8-381a618edd70
+          df7b5e10-5cb9-4838-ac8f-02cd9a3566e2:
+            id: 'entity_field:node:field_ms_resource_title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 112
+            uuid: df7b5e10-5cb9-4838-ac8f-02cd9a3566e2
+          f9f17972-8575-4142-9268-8fda9dbbffee:
+            id: 'entity_field:node:field_ms_video_background_image'
+            label: 'Background Image'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: image
+              settings:
+                image_style: ''
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 109
+            uuid: f9f17972-8575-4142-9268-8fda9dbbffee
+          8b70c286-2e12-4dbd-b9b2-ac5f86af5aa3:
+            id: 'entity_field:node:field_ms_video_display_style'
+            label: 'Display Style'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: list_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 111
+            uuid: 8b70c286-2e12-4dbd-b9b2-ac5f86af5aa3
+          511a7c28-3e24-48f2-8a6a-7fe5aaf12096:
+            id: 'entity_field:node:field_ms_video_photo_credit'
+            label: 'Photo/video Credit'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 110
+            uuid: 511a7c28-3e24-48f2-8a6a-7fe5aaf12096
+          aa2c58e9-6b53-47a7-96c7-5f8aede7014f:
+            id: 'entity_field:node:field_ms_video_subtext'
+            label: Subtext
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 107
+            uuid: aa2c58e9-6b53-47a7-96c7-5f8aede7014f
+          1e242bfd-c377-4f24-bea0-6962e60a91e5:
+            id: 'entity_field:node:field_ms_video_title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 106
+            uuid: 1e242bfd-c377-4f24-bea0-6962e60a91e5
+          334416a2-a477-48dd-93c5-9a1088056369:
+            id: 'entity_field:node:field_ms_video_video_embed'
+            label: 'Video Embed'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: video_embed_field_video
+              settings:
+                responsive: true
+                width: 854
+                height: 480
+                autoplay: true
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 108
+            uuid: 334416a2-a477-48dd-93c5-9a1088056369
+        id: panels_variant
+        label: Default
+        uuid: 8a8e5c94-c717-4d29-ba67-699a957fa2d2
+        weight: 0
+        layout: layout_onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: ''
+        storage_id: ''
+        builder: ipe
+        pattern: panelizer
+  field_group:
+    group_ms_featured_resources:
+      children:
+        - field_ms_resource_title
+        - field_ms_resource
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ms-featured-resources
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Featured Resources'
+      region: content
+    group_video_spotlight:
+      children:
+        - group_video_spotlight_text_wrapp
+        - field_ms_video_video_embed
+        - field_ms_video_image_embed
+        - field_ms_video_map_embed
+        - field_ms_video_photo_credit
+      parent_name: ''
+      weight: 1
+      format_type: background_image
+      format_settings:
+        image: field_ms_video_background_image
+        image_style: ms_hero_image
+        id: ms-video-spotlight
+        classes: ''
+        label: 'Video Spotlight'
+        hide_if_missing: false
+      label: 'Video Spotlight'
+      region: content
+    group_video_spotlight_text_wrapp:
+      children:
+        - field_ms_video_title
+        - field_ms_video_subtext
+      parent_name: group_video_spotlight
+      weight: 7
+      format_type: html_element
+      format_settings:
+        id: ms-video-spotlight-text-wrapper
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Video Spotlight Text Wrapper'
+      region: content
+    group_ms_page_links:
+      children:
+        - field_ms_links_title
+        - field_ms_links_links
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ms-page-links
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Page Links'
+      region: content
+id: node.microsite.default
+targetEntityType: node
+bundle: microsite
+mode: default
+content:
+  field_ms_links_links:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_ms_links_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ms_resource:
+    type: entity_reference_revisions_entity_view
+    weight: 10
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_ms_resource_title:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ms_video_image_embed:
+    weight: 9
+    label: hidden
+    settings:
+      image_style: ms_image_embed
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ms_video_map_embed:
+    weight: 10
+    label: hidden
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      tokensupport: '0'
+    third_party_settings: {  }
+    type: iframe_only
+    region: content
+  field_ms_video_photo_credit:
+    weight: 11
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ms_video_subtext:
+    weight: 22
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_ms_video_title:
+    weight: 21
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ms_video_video_embed:
+    weight: 8
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden:
+  field_ms_hero_image: true
+  field_ms_hero_link: true
+  field_ms_hero_style: true
+  field_ms_hero_subtext: true
+  field_ms_hero_title: true
+  field_ms_links_display_style: true
+  field_ms_video_background_image: true
+  field_ms_video_display_style: true
+  field_ms_video_embed_type: true
+  links: true

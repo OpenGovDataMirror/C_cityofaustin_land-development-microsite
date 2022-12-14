@@ -1,0 +1,75 @@
+uuid: 200bc208-0c34-4b1d-aac4-d03052b4475f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_item.field_body
+    - field.field.paragraph.grid_item.field_image
+    - field.field.paragraph.grid_item.field_more
+    - field.field.paragraph.grid_item.field_title
+    - field.field.paragraph.grid_item.field_video
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.grid_item
+  module:
+    - content_moderation
+    - image
+    - text
+    - video
+id: paragraph.grid_item.default
+targetEntityType: paragraph
+bundle: grid_item
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_more:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video:
+    weight: 4
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+      file_extensions: 'mp4 ogv webm'
+      max_filesize: ''
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: video_upload
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 5
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,8 @@
+uuid: 1182a991-1b05-404b-87e1-f2dd0f2abeae
+langcode: en
+status: true
+dependencies: {  }
+id: career_block
+label: 'Career Block'
+revision: 1
+description: 'Used on the front page.'

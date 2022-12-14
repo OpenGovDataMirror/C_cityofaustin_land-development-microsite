@@ -1,0 +1,17 @@
+uuid: f73fda7a-a762-4a52-a7f1-c8dd635bbb2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Stacked Layout'
+type: stacked_layout
+description: 'Use <em>stacked</em> page to add career type pages to the website'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

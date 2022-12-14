@@ -1,0 +1,11 @@
+uuid: c0fe3ba0-7e2f-49ac-b733-894e50e36293
+langcode: en
+status: true
+dependencies: {  }
+id: NXhscRe0440PFpI5dSznEVgmauL25KojD7u4e9aZwOM
+label: 'http://apdr.lndo.site/'
+chunks: 1
+links: 73
+max_filesize: 10907
+context: {  }
+updated: 1554928798

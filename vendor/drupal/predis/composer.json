@@ -1,0 +1,12 @@
+{
+    "name": "dmouse/predis",
+    "require": {
+        "predis/predis": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "David Flores",
+            "email": "dmousex@gmail.com"
+        }
+    ]
+}

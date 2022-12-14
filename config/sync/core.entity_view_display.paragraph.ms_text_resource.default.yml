@@ -1,0 +1,31 @@
+uuid: 6bab7f1f-5d78-45ca-8e9e-bfd5c30ff8f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ms_text_resource.field_ms_resource_link
+    - paragraphs.paragraphs_type.ms_text_resource
+  module:
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.ms_text_resource.default
+targetEntityType: paragraph
+bundle: ms_text_resource
+mode: default
+content:
+  field_ms_resource_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

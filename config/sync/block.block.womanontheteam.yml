@@ -1,0 +1,31 @@
+uuid: 74b28ea9-b55b-4af4-a50a-78434a9a2506
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1365423a-b671-4d79-87b0-12cb76d72047'
+  module:
+    - block_content
+    - system
+  theme:
+    - apdr
+id: womanontheteam
+theme: apdr
+region: below_content_contained
+weight: -15
+provider: null
+plugin: 'block_content:1365423a-b671-4d79-87b0-12cb76d72047'
+settings:
+  id: 'block_content:1365423a-b671-4d79-87b0-12cb76d72047'
+  label: Innovation
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /academy
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,25 @@
+uuid: 5c8bf39c-1a9c-4d47-b999-ce21c1572152
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4033b6f3-9479-44d2-b3d9-2a571f1e715a'
+  module:
+    - block_content
+  theme:
+    - apdr
+id: footercopyrighttext
+theme: apdr
+region: below_footer
+weight: -17
+provider: null
+plugin: 'block_content:4033b6f3-9479-44d2-b3d9-2a571f1e715a'
+settings:
+  id: 'block_content:4033b6f3-9479-44d2-b3d9-2a571f1e715a'
+  label: 'Footer Copyright Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
